@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SLAs>
+  <SLA Id="1" Regiao="SUL" TipoLocalidade="Capital" Limite="96:00:00"></SLA>
+  <SLA Id="2" Regiao="SUDESTE" TipoLocalidade="Capital" Limite="96:00:00"></SLA>
+  <SLA Id="3" Regiao="SUL" TipoLocalidade="Interior" Limite="96:00:00"></SLA>
+  <SLA Id="4" Regiao="SUDESTE" TipoLocalidade="Interior" Limite="96:00:00"></SLA>
+  <SLA Id="5" Regiao="NORDESTE" TipoLocalidade="Capital" Limite="96:00:00"></SLA>
+  <SLA Id="6" Regiao="NORDESTE" TipoLocalidade="Interior" Limite="192:00:00"></SLA>
+  <SLA Id="7" Regiao="CENTRO-OESTE" TipoLocalidade="Capital" Limite="96:00:00"></SLA>
+  <SLA Id="8" Regiao="CENTRO-OESTE" TipoLocalidade="Interior" Limite="144:00:00"></SLA>
+</SLAs>

@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://www.csfdigital.com.br/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://www.csfdigital.com.br/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://www.csfdigital.com.br/">
+      <s:element name="RetornaOids">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetornaOidsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaOidsResult" type="tns:ArrayOfOids" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfOids">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Oids" nillable="true" type="tns:Oids" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Oids">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IdPerfil" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fabricante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Modelo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Firmware" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Oid" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Propriedade" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RetornaOidsParcial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fabricante" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modelo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="firmware" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaOidsParcialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaOidsParcialResult" type="tns:ArrayOfOids" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaPerfis">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetornaPerfisResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaPerfisResult" type="tns:ArrayOfPerfilOID" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfPerfilOID">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="PerfilOID" nillable="true" type="tns:PerfilOID" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="PerfilOID">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IdPerfil" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Modelo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Firmware" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Data" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fabricante" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CadastroOidPadrao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="IdClasse" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Oidpadrao" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="CadastrarDisparo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="disparo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CadastrarDisparoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetornaIdEquipamento">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="serie" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaIdEquipamentoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RetornaIdEquipamentoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaModelos">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetornaModelosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaModelosResult" type="tns:ArrayOfModelos" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfModelos">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Modelos" nillable="true" type="tns:Modelos" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Modelos">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Modelo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RetornaFirmwares">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="fabricante" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modelo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaFirmwaresResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaFirmwaresResult" type="tns:ArrayOfFirmwares" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfFirmwares">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Firmwares" nillable="true" type="tns:Firmwares" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Firmwares">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="IdFirmware" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Firmwares1" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="retornaData">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornaDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="retornaDataResult" type="s:dateTime" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaIdsDisparos">
+        <s:complexType />
+      </s:element>
+      <s:element name="RetornaIdsDisparosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaIdsDisparosResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="RetornaDisparo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idDisparo" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RetornaDisparoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RetornaDisparoResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="RetornaOidsSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaOids" />
+  </wsdl:message>
+  <wsdl:message name="RetornaOidsSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaOidsResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaOidsParcialSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaOidsParcial" />
+  </wsdl:message>
+  <wsdl:message name="RetornaOidsParcialSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaOidsParcialResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaPerfisSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaPerfis" />
+  </wsdl:message>
+  <wsdl:message name="RetornaPerfisSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaPerfisResponse" />
+  </wsdl:message>
+  <wsdl:message name="CadastrarDisparoSoapIn">
+    <wsdl:part name="parameters" element="tns:CadastrarDisparo" />
+  </wsdl:message>
+  <wsdl:message name="CadastrarDisparoSoapOut">
+    <wsdl:part name="parameters" element="tns:CadastrarDisparoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaIdEquipamentoSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaIdEquipamento" />
+  </wsdl:message>
+  <wsdl:message name="RetornaIdEquipamentoSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaIdEquipamentoResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaModelosSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaModelos" />
+  </wsdl:message>
+  <wsdl:message name="RetornaModelosSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaModelosResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaFirmwaresSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaFirmwares" />
+  </wsdl:message>
+  <wsdl:message name="RetornaFirmwaresSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaFirmwaresResponse" />
+  </wsdl:message>
+  <wsdl:message name="retornaDataSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaData" />
+  </wsdl:message>
+  <wsdl:message name="retornaDataSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaIdsDisparosSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaIdsDisparos" />
+  </wsdl:message>
+  <wsdl:message name="RetornaIdsDisparosSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaIdsDisparosResponse" />
+  </wsdl:message>
+  <wsdl:message name="RetornaDisparoSoapIn">
+    <wsdl:part name="parameters" element="tns:RetornaDisparo" />
+  </wsdl:message>
+  <wsdl:message name="RetornaDisparoSoapOut">
+    <wsdl:part name="parameters" element="tns:RetornaDisparoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="DisparosSoap">
+    <wsdl:operation name="RetornaOids">
+      <wsdl:input message="tns:RetornaOidsSoapIn" />
+      <wsdl:output message="tns:RetornaOidsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaOidsParcial">
+      <wsdl:input message="tns:RetornaOidsParcialSoapIn" />
+      <wsdl:output message="tns:RetornaOidsParcialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaPerfis">
+      <wsdl:input message="tns:RetornaPerfisSoapIn" />
+      <wsdl:output message="tns:RetornaPerfisSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarDisparo">
+      <wsdl:input message="tns:CadastrarDisparoSoapIn" />
+      <wsdl:output message="tns:CadastrarDisparoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaIdEquipamento">
+      <wsdl:input message="tns:RetornaIdEquipamentoSoapIn" />
+      <wsdl:output message="tns:RetornaIdEquipamentoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaModelos">
+      <wsdl:input message="tns:RetornaModelosSoapIn" />
+      <wsdl:output message="tns:RetornaModelosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFirmwares">
+      <wsdl:input message="tns:RetornaFirmwaresSoapIn" />
+      <wsdl:output message="tns:RetornaFirmwaresSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="retornaData">
+      <wsdl:input message="tns:retornaDataSoapIn" />
+      <wsdl:output message="tns:retornaDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaIdsDisparos">
+      <wsdl:input message="tns:RetornaIdsDisparosSoapIn" />
+      <wsdl:output message="tns:RetornaIdsDisparosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RetornaDisparo">
+      <wsdl:input message="tns:RetornaDisparoSoapIn" />
+      <wsdl:output message="tns:RetornaDisparoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="DisparosSoap" type="tns:DisparosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetornaOids">
+      <soap:operation soapAction="http://www.csfdigital.com.br/RetornaOids" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaOidsParcial">
+      <soap:operation soapAction="http://www.csfdigital.com.br/RetornaOidsParcial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaPerfis">
+      <soap:operation soapAction="http://www.csfdigital.com.br/RetornaPerfis" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarDisparo">
+      <soap:operation soapAction="http://www.csfdigital.com.br/CadastrarDisparo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaIdEquipamento">
+      <soap:operation soapAction="http://www.csfdigital.com.br/RetornaIdEquipamento" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaModelos">
+      <soap:operation soapAction="http://www.csfdigital.com.br/RetornaModelos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFirmwares">
+      <soap:operation soapAction="http://www.csfdigital.com.br/RetornaFirmwares" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaData">
+      <soap:operation soapAction="http://www.csfdigital.com.br/retornaData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaIdsDisparos">
+      <soap:operation soapAction="http://www.csfdigital.com.br/RetornaIdsDisparos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaDisparo">
+      <soap:operation soapAction="http://www.csfdigital.com.br/RetornaDisparo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="DisparosSoap12" type="tns:DisparosSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="RetornaOids">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/RetornaOids" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaOidsParcial">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/RetornaOidsParcial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaPerfis">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/RetornaPerfis" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CadastrarDisparo">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/CadastrarDisparo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaIdEquipamento">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/RetornaIdEquipamento" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaModelos">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/RetornaModelos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaFirmwares">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/RetornaFirmwares" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="retornaData">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/retornaData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaIdsDisparos">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/RetornaIdsDisparos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RetornaDisparo">
+      <soap12:operation soapAction="http://www.csfdigital.com.br/RetornaDisparo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Disparos">
+    <wsdl:port name="DisparosSoap" binding="tns:DisparosSoap">
+      <soap:address location="http://www.csfdigital.com.br/webservice/Disparos.asmx" />
+    </wsdl:port>
+    <wsdl:port name="DisparosSoap12" binding="tns:DisparosSoap12">
+      <soap12:address location="http://www.csfdigital.com.br/webservice/Disparos.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

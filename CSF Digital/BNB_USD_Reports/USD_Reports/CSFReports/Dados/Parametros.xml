@@ -1,0 +1,8 @@
+<?xml version="1.0" standalone="yes"?>
+<Parametros>
+  <Parametro Nome="ChamadosNoGrupo" Valor="'Xerox'" />
+  <Parametro Nome="ContingenciaHabilitada" Valor="N" />
+  <Parametro Nome="ValorImpressao" Valor="0,04829" />
+  <Parametro Nome="AssistenciaTecnicaHoraCorteInicio" Valor="08:00:00" />
+  <Parametro Nome="AssistenciaTecnicaHoraCorteFim" Valor="18:00:00" />
+</Parametros>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+	<siteMapNode url="" title="" description="" roles="*" >
+		<siteMapNode url="~/Default.aspx" title="Início" description="Página Principal" roles="administrador,operador, tecnico, usuario"/>
+    <siteMapNode url="~/Atualizacoes.aspx" title="Peças" roles="administrador,operador" >
+      <siteMapNode url="~/Solicitacoes.aspx" title="Solicitações" description="SolicitaçõesdePeças" roles="administrador,operador, usuario" />
+      <siteMapNode url="~/Pecas/Default.aspx" title="Envios" description="EnviosSuprimentos" roles="administrador,operador, usuario" />
+    </siteMapNode>
+    
+		<!--<siteMapNode url="~/Solicitacoes.aspx" title="Solicitações" description="SolicitaçõesdePeças" roles="administrador,operador, usuario" />-->
+		<!--<siteMapNode url="~/Atualizacoes.aspx" title="Atualizações" description="Atualizações de requisições" roles="administrador,operador" />-->
+		<siteMapNode url="~/Relatorios.aspx" title="Relatórios" description="Relatórios Gerenciais" roles="administrador,operador">
+			<!--<siteMapNode url="~/Relatórios/report.aspx?Calendar=true" title="Peças Geral" description="Relatório de Peças Geral" roles="administrador,operador"/>-->
+      <siteMapNode url="~/Relatórios/ARs.aspx" title="Avisos de Recebimento" description="" roles="administrador,operador"/>
+      <siteMapNode url="~/Relatórios/EnviosClientes.aspx" title="Envios de Suprimentos para Clientes" description="Relatório de Acompanhamento de Suprimentos de Clientes" roles="administrador,operador"/>
+      <siteMapNode url="~/Relatórios/EnviosDiarios.aspx" title="Envios de Suprimentos Diários" description="Relatório de Envios Diários" roles="administrador,operador"/>
+      <siteMapNode url="~/Relatórios/report.aspx?Report=pecasGeral" title="Solicitações de Peças" description="Relatório de Peças Geral" roles="administrador,operador"/>
+      <siteMapNode url="~/Relatórios/report.aspx?Report=PecasPendentes" title="Solicitações de Peças Pendentes" description="Relatório de Peças Pendentes" roles="administrador,operador"/>
+      <siteMapNode url="~/Relatórios/Pesquisa.aspx" title="Pesquisa" description="" roles="administrador,operador"/>
+      <siteMapNode url="~/Relatórios/EnviosDiarios.aspx?Report=ras" title="RAS-D" description="Relatório de Acompanhamento de Suprimentos" roles="administrador,operador"/>
+      <siteMapNode url="~/Relatórios/report.aspx?Report=resumoEnvios" title="Resumo de Envios" description="" roles="administrador,operador"/>
+      <!--<siteMapNode url="~/Relatórios/EqptParados.aspx" title="Equipamentos Parados" description="" roles="administrador,operador"/>-->
+      <siteMapNode url="~/Relatórios/postagens.aspx" title="Postagens" description="" roles="administrador,operador"/>
+		</siteMapNode>
+		<!--<siteMapNode url="~/Account/Register.aspx" title="Usuarios" description="Cadastrar Novos Usuários" roles="administrador"/>-->
+    <siteMapNode url="~/Atendimentos_new/Default.aspx" title="Atendimentos" description="Atendimentos Técnicos" roles="administrador, operador">
+      <siteMapNode url="~/Atendimentos/Instalacao.aspx" title="Instalação" description="Instalação"/>
+      <siteMapNode url="~/Atendimentos/Manutencao.aspx" title="Manutenção" description="Manutenção"/>
+    </siteMapNode>
+		<siteMapNode url="~/Suprimentos/Default.aspx" title="Suprimentos" description="Suprimentos" roles="administrador,operador">
+      <siteMapNode url="~/Suprimentos/Envios.aspx" title="Envios" description="Envios de Suprimentos"/>
+      <!--<siteMapNode url="~/Suprimentos/Envios_II.aspx" title="Envios II" description="Envios de Suprimentos"/>-->
+      <siteMapNode url="~/Suprimentos/Etiquetas.aspx" title="Etiquetas" description="Etiquetas"/>
+      <!--<siteMapNode url="~/Suprimentos/Ocomon.aspx" title="Ocomon" description=""/>-->
+      <!--<siteMapNode url="~/Suprimentos/Ocomon_II.aspx" title="Ocomon II" description=""/>-->
+      <siteMapNode url="~/Suprimentos/Solicitar.aspx" title="Solicitar" description=""/>
+      <siteMapNode url="~/Suprimentos/Recolhimentos2.aspx" title="Recolhimentos" description=""/>
+      <siteMapNode url="~/Suprimentos/Relatorios.aspx" title="Relatórios" description=""/>
+		</siteMapNode>
+    <siteMapNode url="~/Estoque.aspx" title="Estoque" description="Estoque" roles="administrador, operador">
+      <siteMapNode url="~/Produtos/Default.aspx" title="Produtos" description="Produtos" roles="administrador, operador"/>
+      <siteMapNode url="~/Movimentacoes/Default.aspx" title="Movimentacoes" description="Movimentacoes" roles="administrador, operador"/>
+      <siteMapNode url="~/Movimentacoes/Relatorio.aspx" title="Relatorio" description="Relatorio" roles="administrador, operador"/>
+    </siteMapNode>
+		<siteMapNode url="" title="Cadastros" description="Cadastros" roles="administrador,operador">
+			<siteMapNode url="~/Cadastros/Clientes.aspx" title="Clientes" description="Cadastro de Clientes"/>
+			<siteMapNode url="~/Cadastros/Equipamentos.aspx" title="Equipamentos" description="Cadastro de Equipamentos"/>
+			<siteMapNode url="~/Cadastros/Tecnicos.aspx" title="Técnicos" description="Cadastro de Técnicos"/>
+		</siteMapNode>
+    <siteMapNode url="~\Correios\Default.aspx" title="Correios" description="Correios" roles="administrador, operador">
+      <siteMapNode url="~\Correios\Fatura.aspx" title="Fatura.aspx" description="Fatura" roles="administrador"/>
+    </siteMapNode>
+		
+		<siteMapNode url="" title="Segurança" roles="administrador,seguranca">
+			<siteMapNode url="~\Cadastros\Roles.aspx" title="Grupos" description="" />
+			<siteMapNode url="~\Account\Register.aspx" title="Usuários" description="" />
+		</siteMapNode>
+	</siteMapNode>
+</siteMap>
+
+

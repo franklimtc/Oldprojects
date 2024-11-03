@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "Lista de Equipamentos";
+    Layout = "~/Views/Shared/_LayoutDashboard.cshtml";
+}
+
+@model IEnumerable<Site.Models.CadastroEquipamentos>
+
+<p>
+    @Html.ActionLink("Novo", "Create")
+</p>
+<table class="table table-hover table-striped">
+    <tr>
+        <th>
+            UF
+        </th>
+        <th>
+            Cidade
+        </th>
+        <th>
+            Unidade
+        </th>
+        <th>
+            Setor
+        </th>
+
+        <th>
+            IP
+        </th>
+        <th>
+            Série
+        </th>
+        <th>
+            Fila
+        </th>
+        <th>
+            Data Ativação
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CadastroEstado.UF)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CadastroCidade.cidade)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CadastroUnidade.descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CadastroSetor.descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ip)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.serie)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dtAtivacao)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.idEquipamento }) |
+                @*@Html.ActionLink("Details", "Details", new { id = item.idEquipamento }) |*@
+                @Html.ActionLink("Delete", "Delete", new { id = item.idEquipamento })
+            </td>
+        </tr>
+    }
+
+</table>

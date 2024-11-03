@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2002
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.Jobs", "dnaPrint.Jobs\dnaPrint.Jobs.csproj", "{E605129F-5B53-47E4-A818-4A32A81966F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.JobsService", "dnaPrint.JobsService\dnaPrint.JobsService.csproj", "{0E69EDC8-2E64-4F7F-9FA1-F6ACBD522604}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "dnaPrintJobsSetup", "dnaPrintJobsSetup\dnaPrintJobsSetup.vdproj", "{5F031C49-BA2F-4021-8A1B-A15612415416}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Site", "Site\Site.csproj", "{40D71A5B-AC97-4DB2-B767-B82BF62EED00}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E605129F-5B53-47E4-A818-4A32A81966F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E605129F-5B53-47E4-A818-4A32A81966F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E605129F-5B53-47E4-A818-4A32A81966F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E605129F-5B53-47E4-A818-4A32A81966F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E69EDC8-2E64-4F7F-9FA1-F6ACBD522604}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E69EDC8-2E64-4F7F-9FA1-F6ACBD522604}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E69EDC8-2E64-4F7F-9FA1-F6ACBD522604}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E69EDC8-2E64-4F7F-9FA1-F6ACBD522604}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F031C49-BA2F-4021-8A1B-A15612415416}.Debug|Any CPU.ActiveCfg = Debug
+		{5F031C49-BA2F-4021-8A1B-A15612415416}.Release|Any CPU.ActiveCfg = Release
+		{40D71A5B-AC97-4DB2-B767-B82BF62EED00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40D71A5B-AC97-4DB2-B767-B82BF62EED00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40D71A5B-AC97-4DB2-B767-B82BF62EED00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40D71A5B-AC97-4DB2-B767-B82BF62EED00}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {343C07B3-0E65-462F-B3F6-9DC436135556}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklimtc.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = dnaPrint.Jobs\\dnaPrint.Jobs.csproj
+		SccProjectName1 = dnaPrint.Jobs
+		SccLocalPath1 = dnaPrint.Jobs
+		SccProjectUniqueName2 = dnaPrint.JobsService\\dnaPrint.JobsService.csproj
+		SccProjectName2 = dnaPrint.JobsService
+		SccLocalPath2 = dnaPrint.JobsService
+		SccProjectUniqueName3 = dnaPrintJobsSetup\\dnaPrintJobsSetup.vdproj
+		SccProjectName3 = dnaPrintJobsSetup
+		SccLocalPath3 = dnaPrintJobsSetup
+		SccProjectUniqueName4 = Site\\Site.csproj
+		SccProjectName4 = Site
+		SccLocalPath4 = Site
+	EndGlobalSection
+EndGlobal

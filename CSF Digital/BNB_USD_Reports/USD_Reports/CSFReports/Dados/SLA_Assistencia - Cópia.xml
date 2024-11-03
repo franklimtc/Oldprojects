@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<SLAs>
+  <SLA Id="1" Prioridade="1" TipoLocalidade="CAPGV" Limite="24:00:00" LimiteContingencia="04:00:00"></SLA>
+  <SLA Id="2" Prioridade="1" TipoLocalidade="Capital" Limite="24:00:00" LimiteContingencia="08:00:00"></SLA>
+  <SLA Id="3" Prioridade="1" TipoLocalidade="Interior" Limite="24:00:00" LimiteContingencia="16:00:00"></SLA>
+  <SLA Id="4" Prioridade="3" TipoLocalidade="CAPGV" Limite="36:00:00" LimiteContingencia="12:00:00"></SLA>
+  <SLA Id="5" Prioridade="3" TipoLocalidade="Capital" Limite="36:00:00" LimiteContingencia="18:00:00"></SLA>
+  <SLA Id="6" Prioridade="3" TipoLocalidade="Interior" Limite="36:00:00" LimiteContingencia="24:00:00"></SLA>
+  <SLA Id="7" Prioridade="5" TipoLocalidade="CAPGV" Limite="36:00:00" LimiteContingencia="12:00:00"></SLA>
+  <SLA Id="8" Prioridade="5" TipoLocalidade="Capital" Limite="36:00:00" LimiteContingencia="18:00:00"></SLA>
+  <SLA Id="9" Prioridade="5" TipoLocalidade="Interior" Limite="36:00:00" LimiteContingencia="24:00:00"></SLA>
+  <SLA Id="10" Prioridade="0" TipoLocalidade="CAPGV" Limite="36:00:00" LimiteContingencia="12:00:00"></SLA>
+  <SLA Id="11" Prioridade="0" TipoLocalidade="Capital" Limite="36:00:00" LimiteContingencia="18:00:00"></SLA>
+  <SLA Id="12" Prioridade="0" TipoLocalidade="Interior" Limite="36:00:00" LimiteContingencia="24:00:00"></SLA>
+</SLAs>

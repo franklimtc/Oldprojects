@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Feriados>
+  <Feriado UF="" Cidade="" Data="01/01/2012" Descricao="Confraternização Universal"></Feriado>
+  <Feriado UF="" Cidade="" Data="21/02/2012" Descricao="Carnaval"></Feriado>
+  <Feriado UF="" Cidade="" Data="06/04/2012" Descricao="Sexta-Feira da Paixão"></Feriado>
+  <Feriado UF="" Cidade="" Data="21/04/2012" Descricao="Tiradentes"></Feriado>
+  <Feriado UF="" Cidade="" Data="01/05/2012" Descricao="Dia do Trabalhador"></Feriado>
+  <Feriado UF="" Cidade="" Data="07/06/2012" Descricao="Corpus Christi"></Feriado>
+  <Feriado UF="" Cidade="" Data="07/09/2012" Descricao="Independência do Brasil"></Feriado>
+  <Feriado UF="" Cidade="" Data="12/10/2012" Descricao="Padroeira do Brasil"></Feriado>
+  <Feriado UF="" Cidade="" Data="02/11/2012" Descricao="Finados"></Feriado>
+  <Feriado UF="" Cidade="" Data="15/11/2012" Descricao="Proclamação da República"></Feriado>
+  <Feriado UF="" Cidade="" Data="25/12/2012" Descricao="Natal"></Feriado>
+  <Feriado UF="" Cidade="" Data="" Descricao=""></Feriado>
+</Feriados>

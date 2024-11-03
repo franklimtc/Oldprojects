@@ -1,0 +1,109 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="dnaPrint.Web.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="pt-br">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <%--<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />--%>
+    <link href="img/dnaPrint_logo.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--Para saber mais sobre scripts de agrupamento no ScriptManager, consulte https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Scripts do Framework--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Scripts do Site--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <a class="navbar-brand" href="../Default.aspx"><img src="../img/logo02_small.png" height="30px" /></a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="../Default.aspx">Início <span class="sr-only">(current)</span></a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastro <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../Cadastros/Unidades.aspx">Unidades</a></li>
+                    <li><a href="../Cadastros/Setores.aspx">Setores</a></li>
+                    <li><a href="../Cadastros/Equipamentos.aspx">Equipamentos</a></li>
+                    <li role="separator" class="divider"></li>
+                    <%--<li role="presentation" class="disabled"><a href="#">Cotas</a></li>--%>
+                    <li><a href="../Cadastros/Modelos.aspx">Modelos</a></li>
+                    <li><a href="../Cadastros/Valores.aspx">Valores</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Monitoramento<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../Monitoramento/Agentes.aspx">Agentes</a></li>
+                    <li><a href="../Monitoramento/Equipamentos.aspx">Equipamentos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Relatórios<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../Relatorios/Bilhetagem.aspx">Bilhetagem</a></li>
+                    <li><a href="../Relatorios/Impressao.aspx">Impressão</a></li>
+                    <li><a href="../Relatorios/Suprimentos.aspx">Suprimentos</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Segurança<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="../Seguranca/MudarSenha.aspx">Alterar Senha</a></li>
+                    <li><a href="../Seguranca/Default.aspx">Cadastrar Usuários</a></li>
+                  </ul>
+                </li>
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                  <li><asp:LinkButton runat="server" ID="btLogoff" Text="Sair" OnClick="btLogoff_Click" CausesValidation="false"></asp:LinkButton></li>
+                <li><a class="navbar-brand" href="../Default.aspx"><img src="../img/logo_Cagece.png" height="30px" /></a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <hr />
+            <footer>
+                <p>&copy; <%: DateTime.Now.Year %> - DNAPRINT 2.0</p>
+            </footer>
+        </div>
+
+    </form>
+</body>
+</html>

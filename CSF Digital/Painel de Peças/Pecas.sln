@@ -1,0 +1,64 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "Painel de Peças", "http://localhost:6612", "{F7F64D8A-6796-485D-931B-FBF3DF9B05F0}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		UseIISExpress = "true"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_6612"
+		Debug.AspNetCompiler.PhysicalPath = "..\Painel de Peças\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_6612\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_6612"
+		Release.AspNetCompiler.PhysicalPath = "..\Painel de Peças\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_6612\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		SlnRelativePath = "..\Painel de Peças\"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controls", "Controls\Controls.csproj", "{17A74DB4-1D22-44A8-AB16-B49A30905BF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7F64D8A-6796-485D-931B-FBF3DF9B05F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F64D8A-6796-485D-931B-FBF3DF9B05F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7F64D8A-6796-485D-931B-FBF3DF9B05F0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7F64D8A-6796-485D-931B-FBF3DF9B05F0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{17A74DB4-1D22-44A8-AB16-B49A30905BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A74DB4-1D22-44A8-AB16-B49A30905BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A74DB4-1D22-44A8-AB16-B49A30905BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A74DB4-1D22-44A8-AB16-B49A30905BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklimtc.visualstudio.com/
+		SccLocalPath0 = .
+		SccWebProject1 = true
+		SccProjectUniqueName1 = http://localhost:6612
+		SccLocalPath1 = .
+		SccProjectEnlistmentChoice1 = 2
+		SccProjectUniqueName2 = Controls\\Controls.csproj
+		SccProjectName2 = Controls
+		SccLocalPath2 = Controls
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,137 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AppSiteMaster.master.cs" Inherits="CSFCenterReports.AppSiteMaster" %>
+<%@ Register Assembly="Telerik.Web.UI" Namespace="Telerik.Web.UI" TagPrefix="telerik" %>
+<%@ Register Assembly="System.Web.Extensions, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI" TagPrefix="asp" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title>CSF Digital</title>
+    <link href="Styles/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript">
+        function noBack() { window.history.forward() }
+        noBack();
+        window.onload = noBack;
+        window.onpageshow = function (evt) { if (evt.persisted) noBack() }
+        window.onunload = function () { void (0) }
+
+        function OnClientDropDownClosingHandler(sender, e) {
+            e.set_cancel(cancelDropDownClosing);
+            cancelDropDownClosing = false;
+            if (!(combo === undefined)) {
+                try { combo.set_text(text); } catch (err) { }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form id="Form2" runat="server">
+        <div id="cabecalho">
+	        <div id="top">
+    	        <div id="titulotop"><p>CSF Digital</p></div>
+                <div id="configure">
+                    <asp:HyperLink ID="PageLogout" runat="server" NavigateUrl="~/Logout.aspx">Sair</asp:HyperLink>
+                    
+                    <asp:HyperLink ID="PageResumo" runat="server" NavigateUrl="~/Resumo.aspx" style="padding-left: 50px;">Resumo</asp:HyperLink>
+                
+                    <asp:HyperLink ID="PageRelatorios" runat="server" NavigateUrl="~/Principal.aspx" style="padding-left: 50px;">Relatórios</asp:HyperLink>
+                    <%--<img src="img/setatop.png" alt="click para abrir" title="Seta indicadora" />--%>
+                
+                    <asp:HyperLink ID="PageUsuarios" runat="server" NavigateUrl="~/ConsultaUsuario.aspx" style="padding-left: 50px;" Visible="false">Usuários</asp:HyperLink>
+                    <%--<img src="img/setatop.png" alt="click para abrir" title="Seta indicadora" />--%>
+                    
+                    <asp:HyperLink ID="PageGrupos" runat="server" NavigateUrl="~/ConsultaGrupo.aspx" style="padding-left: 50px;" Visible="false">Grupos</asp:HyperLink>
+                    <%--<img src="img/setatop.png" alt="click para abrir" title="Seta indicadora" />--%>
+                    
+                    <asp:HyperLink ID="PageDefinicoes" runat="server" NavigateUrl="~/ConsultaParametro.aspx" style="padding-left: 50px;" Visible="false">Definições</asp:HyperLink>
+                    <%--<img src="img/setatop.png" alt="click para abrir" title="Seta indicadora" />--%>
+                    
+                    <asp:HyperLink ID="PageIndicadores" runat="server" NavigateUrl="~/Indicadores.aspx" style="padding-left: 50px;" Visible="false">Indicadores</asp:HyperLink>
+                    <%--<img src="img/setatop.png" alt="click para abrir" title="Seta indicadora" />--%>
+                </div>
+                <%--<div id="logotop"><img src="img/logotop.png" title="logomarca" alt="click para voltar ao inicio" /></div>--%>
+            </div>
+            <div class=clear>
+            
+            </div>
+            <div id="menu">
+    	        <div id="logo"><img src="img/logo.png" title="CSF Digital" alt="CSF Digital" /></div>
+                <div id="menubar">
+                    <ul>
+            	        <li>
+                	        <a href="#">Logado como: <br /> 
+                	            <small>
+                	                <asp:Label ID="lblUsuario" runat="server"></asp:Label>
+                	            </small>
+                	        </a>
+                        </li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+        <asp:ScriptManager ID="ScriptManagerMaster" runat="server"></asp:ScriptManager>
+        <div class="pagina">
+            <div class="conteudopagina">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderCorpo" runat="server"> </asp:ContentPlaceHolder>
+            </div>
+        </div>
+
+        <div id="Div2">
+	        <div id="contatos">
+                <div id="contato1">
+        	        <h2>CSF Rio de Janeiro</h2>
+                    <p>
+                    Praça Floriano, n° 55, sala 1107<br />
+                    Centro, Rio de Janeiro - RJ<br />
+                    CEP: 20031-050<br />
+                    Fone: (21) 3477-0437
+                    </p>
+                </div>
+                <div id="contato2">
+        	        <h2>CSF São Luís</h2>
+                    <p>
+                    Av. dos Holandeses, Quadra 32, n° 1, Lojas 06/07<br />
+                    Calhau, São Luís - MA<br />
+                    CEP: 65071-380<br />
+                    Fone: (98) 3301-2400
+                    &nbsp;</p>           
+                </div>
+                <div id="contato3">
+        	        <h2>CSF Fortaleza</h2>
+                    <p>
+                    Av. Pedro Coelho, n° 955<br />
+			        Centro, Fortaleza - CE<br />
+                    CEP: 60140-100<br />
+			        Fone: (85) 3022-0900
+                    </p>    
+                </div>
+        	        <div class="clear"></div>
+                    <div id="colaboradores">
+                    <h2>Colaboradores</h2>
+                    <div id="banco">
+            	        <img src="img/LogoBanco.png" alt="Banco do Nordeste" title="Banco do nordeste" /></div>
+                    <div id="xerox">
+            	        <img src="img/new_xerox_logo.png" alt="Xerox" title="Xerox" />
+                    </div>
+                    <div id="messagem">
+                    	
+                        <h2>
+                        <img src="img/aspas_esq.png" alt="aspas" title="menssagem" />
+                        Providentes excellentiam in solutiones & servitia in productionem et repono documentorum, ita venustus et viable ad teloneariorum positivis reverteretur in obsidione.
+                        <img src="img/aspas_dir.png" alt="aspas" title="menssagem" /> </h2>
+                        
+                    </div>
+                    <div class="clear"></div>
+    	        </div>
+            </div>
+            
+            <div id="fim">
+    	        <div id="fimcont">
+        	        <div id="direitos">
+        		        <p>© 2013 CSF Digital • All Rights Reserved</p>
+        	        </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

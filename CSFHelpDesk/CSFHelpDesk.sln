@@ -1,0 +1,66 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "CSFHelpDesk", "..\..\WebSites\CSFHelpDesk", "{E70ACEDC-CC88-4EF5-B35E-8C86E992BDC6}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60703"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\WebSites\CSFHelpDesk\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60703\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60703"
+		Release.AspNetCompiler.PhysicalPath = "..\..\WebSites\CSFHelpDesk\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60703\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60703"
+		SlnRelativePath = "..\..\WebSites\CSFHelpDesk\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteSLA", "TesteSLA\TesteSLA.csproj", "{6E739070-52D0-421B-A09D-60BDD8A91E57}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E70ACEDC-CC88-4EF5-B35E-8C86E992BDC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70ACEDC-CC88-4EF5-B35E-8C86E992BDC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E70ACEDC-CC88-4EF5-B35E-8C86E992BDC6}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E70ACEDC-CC88-4EF5-B35E-8C86E992BDC6}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{6E739070-52D0-421B-A09D-60BDD8A91E57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E739070-52D0-421B-A09D-60BDD8A91E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E739070-52D0-421B-A09D-60BDD8A91E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E739070-52D0-421B-A09D-60BDD8A91E57}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklimtc.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = TesteSLA\\TesteSLA.csproj
+		SccProjectName1 = TesteSLA
+		SccLocalPath1 = TesteSLA
+		SccWebProject2 = true
+		SccProjectUniqueName2 = ..\\..\\WebSites\\CSFHelpDesk
+		SccProjectName2 = CSFHelpDesk
+		SccLocalPath2 = ..\\..\\WebSites\\CSFHelpDesk
+		SccProjectEnlistmentChoice2 = 2
+	EndGlobalSection
+EndGlobal

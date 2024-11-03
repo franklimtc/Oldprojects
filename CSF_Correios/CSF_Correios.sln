@@ -1,0 +1,124 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSF_Correios", "CSF_Correios\CSF_Correios.csproj", "{D5C42564-CD07-4A06-A4F3-FE535B15BB35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor", "Monitor\Monitor.csproj", "{FB549680-9460-4422-BA7F-CF7DF2236F2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Monitor_Service_Correios", "Monitor_Service_Correios\Monitor_Service_Correios.csproj", "{8385B061-4892-4CBF-8354-953D521EEBBA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{9B7FB3FA-A86C-4767-988F-AFDE3CD0C848}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupEnviosPreventivos", "SetupEnviosPreventivos\SetupEnviosPreventivos.vdproj", "{5781E72F-8859-4650-8EC2-505EB7C781DD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Postagens", "..\..\..\..\Documents\Visual Studio 2015\Projects\RastreioCorreios\Postagens\Postagens.csproj", "{7070CF7D-A1A1-450E-BE3C-D220D53228D1}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "wsRastreioCorreios", "..\..\..\..\Documents\Visual Studio 2015\WebSites\wsRastreioCorreios", "{EC0EB554-C47B-4F34-8970-84377899AB2F}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{7070cf7d-a1a1-450e-be3c-d220d53228d1}|Postagens.dll;{606C8757-48B3-47D7-91CC-7C12CE986330}|RastroCorreios.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_56810"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\Documents\Visual Studio 2015\WebSites\wsRastreioCorreios\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56810\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_56810"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\Documents\Visual Studio 2015\WebSites\wsRastreioCorreios\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_56810\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56810"
+		SlnRelativePath = "..\..\..\..\Documents\Visual Studio 2015\WebSites\wsRastreioCorreios\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RastroCorreios", "..\..\..\..\Documents\Visual Studio 2015\Projects\WindowsFormsApplication2\WindowsFormsApplication2\RastroCorreios.csproj", "{606C8757-48B3-47D7-91CC-7C12CE986330}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupMonitorCorreiosService", "SetupMonitorCorreiosService\SetupMonitorCorreiosService.vdproj", "{2AB10BC6-96B5-4F6A-93BE-B1F0D90BE845}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5C42564-CD07-4A06-A4F3-FE535B15BB35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5C42564-CD07-4A06-A4F3-FE535B15BB35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5C42564-CD07-4A06-A4F3-FE535B15BB35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5C42564-CD07-4A06-A4F3-FE535B15BB35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB549680-9460-4422-BA7F-CF7DF2236F2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB549680-9460-4422-BA7F-CF7DF2236F2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB549680-9460-4422-BA7F-CF7DF2236F2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB549680-9460-4422-BA7F-CF7DF2236F2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8385B061-4892-4CBF-8354-953D521EEBBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8385B061-4892-4CBF-8354-953D521EEBBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8385B061-4892-4CBF-8354-953D521EEBBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8385B061-4892-4CBF-8354-953D521EEBBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B7FB3FA-A86C-4767-988F-AFDE3CD0C848}.Debug|Any CPU.ActiveCfg = Debug
+		{9B7FB3FA-A86C-4767-988F-AFDE3CD0C848}.Release|Any CPU.ActiveCfg = Release
+		{5781E72F-8859-4650-8EC2-505EB7C781DD}.Debug|Any CPU.ActiveCfg = Debug
+		{5781E72F-8859-4650-8EC2-505EB7C781DD}.Release|Any CPU.ActiveCfg = Release
+		{7070CF7D-A1A1-450E-BE3C-D220D53228D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7070CF7D-A1A1-450E-BE3C-D220D53228D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7070CF7D-A1A1-450E-BE3C-D220D53228D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7070CF7D-A1A1-450E-BE3C-D220D53228D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EC0EB554-C47B-4F34-8970-84377899AB2F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0EB554-C47B-4F34-8970-84377899AB2F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC0EB554-C47B-4F34-8970-84377899AB2F}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC0EB554-C47B-4F34-8970-84377899AB2F}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{606C8757-48B3-47D7-91CC-7C12CE986330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{606C8757-48B3-47D7-91CC-7C12CE986330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{606C8757-48B3-47D7-91CC-7C12CE986330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{606C8757-48B3-47D7-91CC-7C12CE986330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AB10BC6-96B5-4F6A-93BE-B1F0D90BE845}.Debug|Any CPU.ActiveCfg = Debug
+		{2AB10BC6-96B5-4F6A-93BE-B1F0D90BE845}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 10
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklimtc.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CSF_Correios\\CSF_Correios.csproj
+		SccProjectName1 = CSF_Correios
+		SccLocalPath1 = CSF_Correios
+		SccProjectUniqueName2 = Monitor\\Monitor.csproj
+		SccProjectName2 = Monitor
+		SccLocalPath2 = Monitor
+		SccProjectUniqueName3 = Monitor_Service_Correios\\Monitor_Service_Correios.csproj
+		SccProjectName3 = Monitor_Service_Correios
+		SccLocalPath3 = Monitor_Service_Correios
+		SccProjectUniqueName4 = Setup\\Setup.vdproj
+		SccProjectName4 = Setup
+		SccLocalPath4 = Setup
+		SccProjectUniqueName5 = SetupEnviosPreventivos\\SetupEnviosPreventivos.vdproj
+		SccProjectName5 = SetupEnviosPreventivos
+		SccLocalPath5 = SetupEnviosPreventivos
+		SccProjectUniqueName6 = ..\\..\\..\\..\\Documents\\Visual\u0020Studio\u00202015\\Projects\\RastreioCorreios\\Postagens\\Postagens.csproj
+		SccProjectName6 = ../RastreioCorreios/Postagens
+		SccLocalPath6 = ..\\..\\..\\..\\Documents\\Visual\u0020Studio\u00202015\\Projects\\RastreioCorreios\\Postagens
+		SccWebProject7 = true
+		SccProjectUniqueName7 = ..\\..\\..\\..\\Documents\\Visual\u0020Studio\u00202015\\WebSites\\wsRastreioCorreios
+		SccProjectName7 = wsRastreioCorreios
+		SccLocalPath7 = ..\\..\\..\\..\\Documents\\Visual\u0020Studio\u00202015\\WebSites\\wsRastreioCorreios
+		SccProjectEnlistmentChoice7 = 2
+		SccProjectUniqueName8 = ..\\..\\..\\..\\Documents\\Visual\u0020Studio\u00202015\\Projects\\WindowsFormsApplication2\\WindowsFormsApplication2\\RastroCorreios.csproj
+		SccProjectName8 = CSF_Correios/RastroCorreiosWS
+		SccLocalPath8 = ..\\..\\..\\..\\Documents\\Visual\u0020Studio\u00202015\\Projects\\WindowsFormsApplication2\\WindowsFormsApplication2
+		SccProjectUniqueName9 = SetupMonitorCorreiosService\\SetupMonitorCorreiosService.vdproj
+		SccProjectName9 = SetupMonitorCorreiosService
+		SccLocalPath9 = SetupMonitorCorreiosService
+	EndGlobalSection
+EndGlobal

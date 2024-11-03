@@ -1,0 +1,125 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrintJobs", "dnaPrintJobs\dnaPrintJobs.csproj", "{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "dnaprintWS", "..\dnaprintWS", "{7994A409-F41A-4158-B107-CA5B038E12D0}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/dnaprintWS"
+		Debug.AspNetCompiler.PhysicalPath = "..\dnaprintWS\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\dnaprintWS\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/dnaprintWS"
+		Release.AspNetCompiler.PhysicalPath = "..\dnaprintWS\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\dnaprintWS\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "56990"
+		SlnRelativePath = "..\dnaprintWS\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cripto", "..\Cripto\WindowsFormsApplication1\Cripto.csproj", "{6D8E1024-EFD0-4202-9297-1540B47AA685}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrintJobsMonitor", "..\dnaPrintJobsMonitor\dnaPrintJobsMonitor.csproj", "{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "dnaPrintJobsSetup", "..\dnaPrintJobsSetup\dnaPrintJobsSetup.vdproj", "{1EFD059B-A6FE-439A-B17C-3142A5B5C79C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Debug|x86.ActiveCfg = Debug|x86
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Debug|x86.Build.0 = Debug|x86
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Release|Any CPU.ActiveCfg = Release|x86
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Release|Mixed Platforms.Build.0 = Release|x86
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Release|x86.ActiveCfg = Release|x86
+		{7C4AC399-60D2-4A22-B178-DB3F0CBD8AFB}.Release|x86.Build.0 = Release|x86
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Release|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Release|Mixed Platforms.Build.0 = Debug|Any CPU
+		{7994A409-F41A-4158-B107-CA5B038E12D0}.Release|x86.ActiveCfg = Debug|Any CPU
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Debug|x86.ActiveCfg = Debug|x86
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Debug|x86.Build.0 = Debug|x86
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Release|Any CPU.ActiveCfg = Release|x86
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Release|Mixed Platforms.Build.0 = Release|x86
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Release|x86.ActiveCfg = Release|x86
+		{6D8E1024-EFD0-4202-9297-1540B47AA685}.Release|x86.Build.0 = Release|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Debug|x86.ActiveCfg = Debug|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Debug|x86.Build.0 = Debug|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Release|Any CPU.ActiveCfg = Release|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Release|Mixed Platforms.Build.0 = Release|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Release|x86.ActiveCfg = Release|x86
+		{ACF1DEC0-B30D-47F6-B54B-05A4A574CE2D}.Release|x86.Build.0 = Release|x86
+		{1EFD059B-A6FE-439A-B17C-3142A5B5C79C}.Debug|Any CPU.ActiveCfg = Debug
+		{1EFD059B-A6FE-439A-B17C-3142A5B5C79C}.Debug|Mixed Platforms.ActiveCfg = Debug
+		{1EFD059B-A6FE-439A-B17C-3142A5B5C79C}.Debug|Mixed Platforms.Build.0 = Debug
+		{1EFD059B-A6FE-439A-B17C-3142A5B5C79C}.Debug|x86.ActiveCfg = Debug
+		{1EFD059B-A6FE-439A-B17C-3142A5B5C79C}.Release|Any CPU.ActiveCfg = Release
+		{1EFD059B-A6FE-439A-B17C-3142A5B5C79C}.Release|Mixed Platforms.ActiveCfg = Release
+		{1EFD059B-A6FE-439A-B17C-3142A5B5C79C}.Release|Mixed Platforms.Build.0 = Release
+		{1EFD059B-A6FE-439A-B17C-3142A5B5C79C}.Release|x86.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklimtc.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\Cripto\\WindowsFormsApplication1\\Cripto.csproj
+		SccProjectName1 = ../Cripto/WindowsFormsApplication1
+		SccLocalPath1 = ..\\Cripto\\WindowsFormsApplication1
+		SccProjectUniqueName2 = dnaPrintJobs\\dnaPrintJobs.csproj
+		SccProjectName2 = dnaPrintJobs
+		SccLocalPath2 = dnaPrintJobs
+		SccProjectUniqueName3 = ..\\dnaPrintJobsMonitor\\dnaPrintJobsMonitor.csproj
+		SccProjectName3 = ../dnaPrintJobsMonitor
+		SccLocalPath3 = ..\\dnaPrintJobsMonitor
+		SccProjectUniqueName4 = ..\\dnaPrintJobsSetup\\dnaPrintJobsSetup.vdproj
+		SccProjectName4 = ../dnaPrintJobsSetup
+		SccLocalPath4 = ..\\dnaPrintJobsSetup
+		SccWebProject5 = true
+		SccProjectUniqueName5 = ..\\dnaprintWS
+		SccProjectName5 = ../dnaprintWS
+		SccLocalPath5 = ..\\dnaprintWS
+		SccProjectEnlistmentChoice5 = 2
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,131 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
+<head runat="server">
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="packages/bootstrap.4.1.3/content/Content/bootstrap.css" rel="text/css" />
+
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+        <div class="container-fluid">
+            <%--Header--%>
+            <div class="row">
+                <div class="col-md-12">
+                    <asp:LoginView ID="HeadLoginView" runat="server" EnableViewState="false">
+                    <AnonymousTemplate>
+                        <%--[ <a href="~/Account/Login.aspx" ID="HeadLoginStatus" runat="server">Log In</a> ]--%>
+                    </AnonymousTemplate>
+                    <LoggedInTemplate>
+                        <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                          <a class="navbar-brand" href="../Relatorios.aspx"><img src="../Imagens/logoCSF.png" height="30" width="auto" class="d-inline-block align-top" alt=""> - PPS</a>
+                          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarText">
+                            <ul class="navbar-nav mr-auto">
+                              <li class="nav-item active">
+                                <a class="nav-link" href="../Relatorios.aspx">Início <span class="sr-only">(current)</span></a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="../Atendimentos/Manutencao.aspx">Atendimentos</a>
+                              </li>
+                                 <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Cadastros
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="../Cadastros/Clientes.aspx">Clientes</a>
+                                  <a class="dropdown-item" href="../Cadastros/Equipamentos2.aspx">Equipamentos</a>
+                                  <a class="dropdown-item" href="../Cadastros/Tecnicos.aspx">Técnicos</a>
+                                </div>
+                              </li>
+                                <li class="nav-item">
+                                <a class="nav-link" href="../Correios/Default.aspx">Correios</a>
+                              </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        Estoque
+                                    </a>
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item" href="../Estoque.aspx">Resumo</a>
+                                        <a class="dropdown-item" href="../Produtos/Default.aspx">Produtos</a>
+                                        <a class="dropdown-item" href="../Movimentacoes/Default.aspx">Movimentações</a>
+                                        <a class="dropdown-item" href="../Movimentacoes/Relatorio.aspx">Relatório</a>
+                                    </div>
+                                </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                   Peças
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../Pecas/Default.aspx">Enviar</a>
+                                    <a class="dropdown-item" href="../Solicitacoes.aspx">Solicitar</a>
+                                    <a class="dropdown-item" href="../Atualizacoes.aspx">Relatório</a>
+                                </div>
+                            </li>
+                                <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Suprimentos
+                                </a>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="../Suprimentos/Envios.aspx">Enviar</a>
+                                    <a class="dropdown-item" href="../Suprimentos/Solicitar2.aspx">Solicitar</a>
+                                    <a class="dropdown-item" href="../Suprimentos/Default.aspx">Relatório</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="../Relatórios/EnviosDiarios.aspx">Envios Diários</a>
+                                    <a class="dropdown-item" href="../Suprimentos/Etiquetas.aspx">Etiquetas</a>
+                                    <a class="dropdown-item" href="../Suprimentos/Recolhimentos2.aspx">Recolhimentos</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="../Suprimentos/ConfirmarEntrega.aspx">Confirmar Entregas</a>
+
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Segurança
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="../Cadastros/Roles.aspx">Grupos</a>
+                                    <a class="dropdown-item" href="../Account/Register.aspx">Usuários</a>
+                                </div>
+                            </li>
+                            </ul>
+                            <span class="navbar-text">
+                              Bem vindo <span class="bold"><asp:LoginName ID="HeadLoginName" runat="server" /></span>!
+                                [ <asp:LoginStatus ID="HeadLoginStatus" runat="server" LogoutAction="Redirect" LogoutText="Sair" LogoutPageUrl="~/"/> ]
+                                <asp:HyperLink ID="hlMudarSenha" runat="server"  Text="[Mudar Senha]" NavigateUrl="~/Account/ChangePassword.aspx" ></asp:HyperLink>
+                            </span>
+                          </div>
+                        </nav>
+                    </LoggedInTemplate>
+                </asp:LoginView>
+                </div>
+            </div>
+            <%--Main--%>
+            <div class="row main">
+                <div class="col-md-12">
+                    <br />
+                    <br />
+                    <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+                </div>
+            </div>
+            <%--Footer--%>
+            <!-- Footer -->
+           
+            <!-- Footer -->
+        </div>
+    </form>
+
+    <%--Scripts--%>
+    <script type="text/jscript" src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script type="text/jscript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script type="text/jscript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <%--Scripts--%>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="43b7b691-bb36-41cc-8604-5e8482b92141" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://177.22.35.178:8484/wsEmail/sEmail.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="sEmail.disco" MetadataType="Disco" ID="16bd6f0a-8953-4d4d-bf63-db6e5cfe35d6" SourceId="1" SourceUrl="http://177.22.35.178:8484/wsEmail/sEmail.svc?disco" />
+    <MetadataFile FileName="sEmail.xsd" MetadataType="Schema" ID="da6a5c3c-2c7a-451e-be81-75e4b918a113" SourceId="1" SourceUrl="http://177.22.35.178:8484/wsEmail/sEmail.svc?xsd=xsd0" />
+    <MetadataFile FileName="sEmail1.xsd" MetadataType="Schema" ID="e0383f0f-b103-4a58-93c1-c0b942a285cd" SourceId="1" SourceUrl="http://177.22.35.178:8484/wsEmail/sEmail.svc?xsd=xsd2" />
+    <MetadataFile FileName="sEmail.wsdl" MetadataType="Wsdl" ID="6b278468-aa9e-46db-bc6b-8c156010f9c7" SourceId="1" SourceUrl="http://177.22.35.178:8484/wsEmail/sEmail.svc?wsdl" />
+    <MetadataFile FileName="sEmail2.xsd" MetadataType="Schema" ID="6953b3dc-b25a-4bf6-b1d0-a9e6a50d5a02" SourceId="1" SourceUrl="http://177.22.35.178:8484/wsEmail/sEmail.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

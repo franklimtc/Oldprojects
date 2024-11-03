@@ -1,0 +1,139 @@
+﻿@model Site.Models.CadastroEquipamentos
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CadastroEquipamentos</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroCidade.cidade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CadastroCidade.cidade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroEquipamentoModelo.Fabricante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CadastroEquipamentoModelo.Fabricante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroEstado.UF)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CadastroEstado.UF)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroSetor.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CadastroSetor.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CadastroUnidade.descricao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CadastroUnidade.descricao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ip)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ip)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.fabricante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.fabricante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.serie)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.serie)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.nome)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nome)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dtAtivacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dtAtivacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dtDesativacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dtDesativacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.leituraDireta)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.leituraDireta)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.dtModificacao)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.dtModificacao)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.cor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.status)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.idEquipamento }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

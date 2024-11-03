@@ -1,0 +1,24 @@
+<?xml version="1.0" standalone="yes"?>
+<Chaves>
+  <Chave ValorAntigo="!%!INICIO DE ATENDIMENTO!%!" Valor="!%!1000000!%!" Traducao="Atendimento iniciado." Ativo="True" />
+  <Chave ValorAntigo="!%!ENVIO DE TECNICO" Valor="!%!2000000!%!" Traducao="Técnico enviado." Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!ENVIO DE PECA!%!" Traducao="Despache - Peça" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!3000010!%!" Traducao="Despache - FUSOR" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!3000008!%!" Traducao="Despache - MOVIMENTAÇÕES" Ativo="true" />
+  <Chave ValorAntigo="" Valor="%!3000001!%!" Traducao="Despache - PWBs" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!3000100!%!" Traducao="Despache - OUTROS" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!CHEGADA DE PECA!%!" Traducao="Chegada - Peça" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!3300010!%!" Traducao="Chegada - FUSOR" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!3300008!%!" Traducao="Chegada - MOVIMENTAÇÕES" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!3300001!%!" Traducao="Chegada - PWBs" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!3300100!%!" Traducao="Chegada - OUTROS" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!ENVIO DE INSUMO!%!" Traducao="Despache - Insumo" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!4000091!%!" Traducao="Despache - TONER" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!4000092!%!" Traducao="Despache - FOTO" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!CHEGADA DE INSUMO!%!" Traducao="Chegada - Insumo" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!4400091!%!" Traducao="Chegada - TONER" Ativo="true" />
+  <Chave ValorAntigo="" Valor="!%!4400092!%!" Traducao="Chegada - FOTO" Ativo="true" />
+  <Chave ValorAntigo="!%!CHEGADA/INICIO DE ATENDIMENTO!%!" Valor="%!2200000!%!" Traducao="Chegada de técnico." Ativo="true" />
+  <Chave ValorAntigo="!%!SOLUCAO DE CONTINGENCIA!%!" Valor="!%!5000000!%!" Traducao="Solução de contingência." Ativo="true" />
+  <Chave ValorAntigo="!%!SOLUCAO DEFINITIVA!%!" Valor="!%!6000000!%!" Traducao="Solução definitiva." Ativo="true" />
+</Chaves>

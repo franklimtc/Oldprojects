@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Inserir">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="value" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="InserirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="InserirResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="InserirSoapIn">
+    <wsdl:part name="parameters" element="tns:Inserir" />
+  </wsdl:message>
+  <wsdl:message name="InserirSoapOut">
+    <wsdl:part name="parameters" element="tns:InserirResponse" />
+  </wsdl:message>
+  <wsdl:portType name="printjobSoap">
+    <wsdl:operation name="Inserir">
+      <wsdl:input message="tns:InserirSoapIn" />
+      <wsdl:output message="tns:InserirSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="printjobSoap" type="tns:printjobSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Inserir">
+      <soap:operation soapAction="http://tempuri.org/Inserir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="printjobSoap12" type="tns:printjobSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Inserir">
+      <soap12:operation soapAction="http://tempuri.org/Inserir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="printjob">
+    <wsdl:port name="printjobSoap" binding="tns:printjobSoap">
+      <soap:address location="http://s1sbdp01.capgv.intra.bnb/ws/printjob.asmx" />
+    </wsdl:port>
+    <wsdl:port name="printjobSoap12" binding="tns:printjobSoap12">
+      <soap12:address location="http://s1sbdp01.capgv.intra.bnb/ws/printjob.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

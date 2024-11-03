@@ -1,0 +1,47 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrintSNMP", "..\dnaPrintSnmpPosto 4.0\dnaPrintSNMP\dnaPrintSNMP.csproj", "{3B30F0CF-1075-4D73-A329-6DD730EFA988}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Parametros", "..\dnaPrintSnmpPosto 4.0\Parametros\Parametros.csproj", "{D8930E46-BCA4-4AF1-BB1D-8B8C62144C7D}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "dnaPrintPosto", "dnaPrintPosto\dnaPrintPosto.vdproj", "{D5042A64-CDAB-47EC-AE7A-E4E40EACCA78}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklimtc.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = dnaPrintPosto\\dnaPrintPosto.vdproj
+		SccProjectName1 = dnaPrintPosto
+		SccLocalPath1 = dnaPrintPosto
+		SccProjectUniqueName2 = ..\\dnaPrintSnmpPosto\u00204.0\\dnaPrintSNMP\\dnaPrintSNMP.csproj
+		SccProjectName2 = ../dnaPrintSnmpPosto\u00204.0/dnaPrintSNMP
+		SccLocalPath2 = ..\\dnaPrintSnmpPosto\u00204.0\\dnaPrintSNMP
+		SccProjectUniqueName3 = ..\\dnaPrintSnmpPosto\u00204.0\\Parametros\\Parametros.csproj
+		SccProjectName3 = ../dnaPrintSnmpPosto\u00204.0/Parametros
+		SccLocalPath3 = ..\\dnaPrintSnmpPosto\u00204.0\\Parametros
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B30F0CF-1075-4D73-A329-6DD730EFA988}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B30F0CF-1075-4D73-A329-6DD730EFA988}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B30F0CF-1075-4D73-A329-6DD730EFA988}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B30F0CF-1075-4D73-A329-6DD730EFA988}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D8930E46-BCA4-4AF1-BB1D-8B8C62144C7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8930E46-BCA4-4AF1-BB1D-8B8C62144C7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8930E46-BCA4-4AF1-BB1D-8B8C62144C7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8930E46-BCA4-4AF1-BB1D-8B8C62144C7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5042A64-CDAB-47EC-AE7A-E4E40EACCA78}.Debug|Any CPU.ActiveCfg = Debug
+		{D5042A64-CDAB-47EC-AE7A-E4E40EACCA78}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AppSiteMaster.master.cs" Inherits="AppSiteMaster" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head id="Head1" runat="server">
+        <title>CSF Digital</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <link href="App_Themes/Tema/style.css" rel="stylesheet" type="text/css" />        
+        <div id="topoEsticado">
+	        <div id="topoCentro"> 
+		        <div class="logo">
+    		        <a href="Home.aspx" class="link">Logo Marca</a>
+   		         </div>
+   		         <div class="iconelogout">
+         	        <a href="Logout.aspx" class="link">h</a>
+                 </div>
+                 <div class="iconeConfiguracao">
+         	        <a href="Configuracao.aspx" class="link">c</a>
+                 </div>
+                 <div class="barraTopo1">
+                 </div>
+                  <div class="iconeMonitor">
+         	        <a href="Acompanhamento.aspx" class="link">m</a>
+                 </div>
+                 <div class="barraTopo2">
+                 </div>
+                 <div class="iconeHome">
+         	        <a href="Home.aspx" class="link">h</a>
+                 </div>
+            </div>
+            <div id="barraVermelha">                
+                
+                <div class="menuFixo">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolderCabecalho" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </td>
+                    </tr>
+                      
+                </div>
+                
+            </div>
+        </div>
+    </head>
+    <body>        
+        <br />
+        <br />
+        <br />
+        <div>
+            <form id="form1" runat="server">
+                <asp:ScriptManager ID="ScriptManagerMaster" runat="server"></asp:ScriptManager>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderCorpo" runat="server"></asp:ContentPlaceHolder>
+                <div id="barraInformacoes">
+                    <table width="100%">
+                        <tr>
+                            <td align="left">
+                                <asp:Image ID="SetaEsq" runat="server" ImageUrl="~/Imagens/seta_left.png" />
+                            </td>
+                            <td align="center">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolderRodape" runat="server"></asp:ContentPlaceHolder>
+                            </td>
+                            <td align="right">
+                                <asp:Image ID="SetaDir" runat="server" ImageUrl="~/Imagens/seta_right.png" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="rodapeEsticado">
+                    <h3> © CSF Digital. Todos os direitos reservados. </h3>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

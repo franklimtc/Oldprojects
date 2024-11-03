@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="405b50a9-7b84-4192-9865-728cc53b4e58" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://www.csfdigital.com.br/dnaprint/Execute.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Execute.xsd" MetadataType="Schema" ID="625fbd08-ed80-40eb-ae55-f431b56ab040" SourceId="1" SourceUrl="http://www.csfdigital.com.br/dnaprint/Execute.svc?xsd=xsd0" />
+    <MetadataFile FileName="Execute.disco" MetadataType="Disco" ID="c3055f29-ea1e-4476-8789-01accde4bd6c" SourceId="1" SourceUrl="http://www.csfdigital.com.br/dnaprint/Execute.svc?disco" />
+    <MetadataFile FileName="Execute1.xsd" MetadataType="Schema" ID="8b3c1bf9-6b9e-423a-93bb-dedb9beca0ae" SourceId="1" SourceUrl="http://www.csfdigital.com.br/dnaprint/Execute.svc?xsd=xsd1" />
+    <MetadataFile FileName="Execute2.xsd" MetadataType="Schema" ID="df42c29e-a001-45ca-acab-88a7a21e8ec6" SourceId="1" SourceUrl="http://www.csfdigital.com.br/dnaprint/Execute.svc?xsd=xsd2" />
+    <MetadataFile FileName="Execute.wsdl" MetadataType="Wsdl" ID="bc8c5f63-1000-4c08-92ce-0ff45f995a3d" SourceId="1" SourceUrl="http://www.csfdigital.com.br/dnaprint/Execute.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

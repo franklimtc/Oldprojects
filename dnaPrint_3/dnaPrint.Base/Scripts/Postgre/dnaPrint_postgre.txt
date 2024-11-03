@@ -1,0 +1,814 @@
+﻿
+CREATE SEQUENCE ArquivoImpresso_seq;
+
+CREATE TABLE ArquivoImpresso(
+	id int DEFAULT NEXTVAL ('ArquivoImpresso_seq') PRIMARY KEY  NOT NULL,
+	Color int NULL,
+	Copies int NULL,
+	DataType Text NULL,
+	Deleted int NULL,
+	Deleting int NULL,
+	Document Text NULL,
+	DriverName Text NULL,
+	InError int NULL,
+	JobId int NULL,
+	JobSize int NULL,
+	Landscape int NULL,
+	MachineName Text NULL,
+	NotifyUserName Text NULL,
+	Offline int NULL,
+	PagesPrinted int NULL,
+	PaperKind Text NULL,
+	PaperLength int NULL,
+	PaperOut int NULL,
+	PaperSource Text NULL,
+	PaperWidth int NULL,
+	Parameters Text NULL,
+	Paused int NULL,
+	Position int NULL,
+	Printed int NULL,
+	PrinterName Text NULL,
+	PrinterResolutionKind Text NULL,
+	PrinterResolutionX int NULL,
+	PrinterResolutionY int NULL,
+	Printing int NULL,
+	PrintProcessorName Text NULL,
+	Priority int NULL,
+	QueuedTime int NULL,
+	Spooling int NULL,
+	StatusDescription Text NULL,
+	Submitted Timestamp(3) NULL,
+	TimeWindow Text NULL,
+	TotalPages int NULL,
+	UserInterventionRequired int NULL,
+	UserName Text NULL,
+	server Text NULL,
+	inserida Boolean NULL DEFAULT '0'
+); 
+
+
+ 
+CREATE SEQUENCE AtualizaEntregaSuprimentos_seq;
+
+CREATE TABLE AtualizaEntregaSuprimentos(
+	id int DEFAULT NEXTVAL ('AtualizaEntregaSuprimentos_seq') NOT NULL primary key,
+	usuario Text NULL,
+	data Timestamp(3) NULL DEFAULT (now()));
+
+
+CREATE SEQUENCE CadastroCidade_seq;
+
+CREATE TABLE CadastroCidade(
+	idCidade int DEFAULT NEXTVAL ('CadastroCidade_seq')  NOT NULL PRIMARY KEY,
+	idEstado int NULL,
+	cidade varchar(35) NOT NULL);
+
+
+ 
+CREATE SEQUENCE CadastroCotaGrupo_seq;
+
+CREATE TABLE CadastroCotaGrupo(
+	idGrupo int DEFAULT NEXTVAL ('CadastroCotaGrupo_seq') NOT NULL PRIMARY KEY,
+	descricao Text NULL,
+	cotaMensal int NULL,
+	status bit default '1',
+	dtAtivacao Timestamp(3) NULL,
+	dtDesativacao Timestamp(3) NULL,
+	servidor varchar(50) NULL,
+	permitirColor char(1) NULL DEFAULT ((0))); 
+
+
+ 
+CREATE SEQUENCE CadastroCotaParametro_seq;
+
+CREATE TABLE CadastroCotaParametro(
+	id int DEFAULT NEXTVAL ('CadastroCotaParametro_seq') NOT NULL PRIMARY KEY,
+	descricao Text NOT NULL,
+	valorTipo varchar(10) NOT NULL,
+	value Text NOT NULL); 
+
+
+ 
+CREATE SEQUENCE CadastroCotaUsuario_seq;
+
+CREATE TABLE CadastroCotaUsuario(
+	idUsuario int DEFAULT NEXTVAL ('CadastroCotaUsuario_seq') NOT NULL PRIMARY KEY,
+	idGrupo int NULL,
+	apelido Text NULL,
+	cotaMensal int NULL,
+	usarCotaGrupo char(1) NULL,
+	usuario Text NULL,
+	status bit default '1',
+	dtAtivacao Timestamp(3) NULL,
+	dtDesativacao Timestamp(3) NULL,
+	idSetor int NULL,
+	statusCota bit default '1',
+	email Text NULL,
+	permitirColor char(1) NULL); 
+
+
+CREATE SEQUENCE CadastroEquipamentoClasse_seq;
+
+CREATE TABLE CadastroEquipamentoClasse(
+	idCadastroEquipamentoClasse int DEFAULT NEXTVAL ('CadastroEquipamentoClasse_seq')  NOT NULL PRIMARY KEY,
+	classe varchar(20) NOT NULL,
+	cor char(1) NOT NULL,
+	grandeFormato char(1) NOT NULL);
+ 
+CREATE SEQUENCE CadastroEquipamentoModelo_seq;
+
+CREATE TABLE CadastroEquipamentoModelo(
+	idModeloEquipamento int DEFAULT NEXTVAL ('CadastroEquipamentoModelo_seq')  NOT NULL PRIMARY KEY,
+	Fabricante Text NULL,
+	Modelo Text NULL); 
+
+
+CREATE SEQUENCE CadastroEquipamentos_seq;
+
+
+CREATE TABLE CadastroEquipamentos(
+	idEquipamento int DEFAULT NEXTVAL ('CadastroEquipamentos_seq')  NOT NULL PRIMARY KEY,
+	idEstado int NULL,
+	idCidade int NULL,
+	idLocalidade int NULL,
+	idSetor int NULL,
+	idModeloEquipamento int NULL,
+	ip varchar(15) NULL,
+	fabricante varchar(50) NULL,
+	cor char(1) NULL,
+	serie varchar(15) NULL,
+	nome varchar(30) NULL,
+	status bit default '1',
+	dtAtivacao Timestamp(3) NULL DEFAULT (now()),
+	dtDesativacao Timestamp(3) NULL,
+	leituraDireta Boolean NULL DEFAULT '1',
+	dtModificacao Timestamp(3) NULL,
+    contrato varchar(10),
+    tecnico varchar(20),
+    operador varchar(20),
+    valorTecnico double precision
+); 
+
+
+ 
+CREATE SEQUENCE CadastroEstado_seq;
+
+CREATE TABLE CadastroEstado(
+	idEstado int DEFAULT NEXTVAL ('CadastroEstado_seq')  NOT NULL PRIMARY KEY,
+	UF varchar(2) NOT NULL,
+	estado varchar(20) NOT NULL);
+
+
+CREATE SEQUENCE CadastroOid_seq;
+
+CREATE TABLE CadastroOid(
+	idCadastroOid int DEFAULT NEXTVAL ('CadastroOid_seq')  NOT NULL PRIMARY KEY,
+	idPropriedade int NOT NULL,
+	idPerfil int NOT NULL,
+	Oid Text NULL); 
+
+
+CREATE SEQUENCE CadastroPeca_seq;
+
+CREATE TABLE CadastroPeca(
+	idtpPeca int DEFAULT NEXTVAL ('CadastroPeca_seq')  NOT NULL PRIMARY KEY,
+	idModeloEquipamento int NULL,
+	peca Text NULL,
+	partNumber Text NULL,
+	volumeEstimado int NULL,
+	valor DOUBLE PRECISION NULL); 
+
+
+CREATE SEQUENCE CadastroPerfilOid_seq;
+
+ CREATE TABLE CadastroPerfilOid(
+	idPerfil int DEFAULT NEXTVAL ('CadastroPerfilOid_seq')  NOT NULL PRIMARY KEY,
+	modelo varchar(50) NULL,
+	firmware varchar(50) NULL,
+	data Timestamp(3) NULL,
+	fabricante varchar(50) NULL,
+	CadastroOidPadrao Text NULL,
+	idClasse int NULL,
+	oidpadrao Text NULL); 
+
+ 
+CREATE SEQUENCE CadastroPropriedadeOid_seq;
+
+CREATE TABLE CadastroPropriedadeOid(
+	idpropriedade int DEFAULT NEXTVAL ('CadastroPropriedadeOid_seq')  NOT NULL PRIMARY KEY,
+	propriedade Text NULL); 
+
+ 
+CREATE SEQUENCE CadastroRedeInv_seq;
+
+CREATE TABLE CadastroRedeInv(
+	idRede int DEFAULT NEXTVAL ('CadastroRedeInv_seq') NOT NULL PRIMARY KEY,
+	ipInicial varchar(15) NOT NULL,
+	ipFinal varchar(15) NOT NULL,
+	dtAtivacao Timestamp(3) NULL,
+	dtDesativacao Timestamp(3) NULL);
+
+ 
+CREATE SEQUENCE CadastroSetor_seq;
+
+CREATE TABLE CadastroSetor(
+	idSetor int DEFAULT NEXTVAL ('CadastroSetor_seq')  NOT NULL PRIMARY KEY,
+	idLocalidade int NULL,
+	descricao Text NOT NULL,
+	centroCusto Text NOT NULL,
+	status bit default '1',
+	cotaMensal int NULL);
+
+ 
+CREATE SEQUENCE CadastroSuprimento_seq;
+
+CREATE TABLE CadastroSuprimento(
+	idtpSuprimento int DEFAULT NEXTVAL ('CadastroSuprimento_seq') NOT NULL PRIMARY KEY,
+	idModeloEquipamento int NULL,
+	suprimento Text NULL,
+	partNumber Text NULL,
+	volumeEstimado int NULL,
+	valor DOUBLE PRECISION NULL); 
+
+ 
+ CREATE SEQUENCE dadosRevenda_seq;
+
+CREATE TABLE dadosRevenda(
+	idRevenda int DEFAULT NEXTVAL ('dadosRevenda_seq') NOT NULL PRIMARY KEY,
+	revenda Text NULL,
+	endereco Text NULL,
+	numero int NULL,
+	bairro Text NULL,
+	complemento Text NULL,
+	cnpj Text NULL,
+	ie Text NULL,
+	fone Text NULL,
+	fax Text NULL,
+	contato Text NULL,
+	email Text NULL); 
+ 
+CREATE SEQUENCE CadastroUnidade_seq;
+
+CREATE TABLE CadastroUnidade
+(
+idLocalidade int DEFAULT NEXTVAL ('CadastroUnidade_seq')  NOT NULL PRIMARY KEY
+, idCidade INT REFERENCES CadastroCidade(idCidade)
+, descricao	VARCHAR(50)
+, endereco	VARCHAR(50)	
+, telefone	VARCHAR(50)	
+, contato	VARCHAR(50)	
+, status bit default '1'
+, razaoSocial	VARCHAR(50)
+, numero int	
+, bairro VARCHAR(50)	
+, cep	VARCHAR(10)		
+, cnpj VARCHAR(50)			
+, ie	VARCHAR(50)		
+, fax	VARCHAR(50)		
+, email	VARCHAR(50)		
+, idRevenda	int REFERENCES dadosRevenda NULL DEFAULT 1	
+);
+
+ 
+CREATE SEQUENCE CadastroValorPag_seq;
+
+CREATE TABLE CadastroValorPag(
+	idValorPagina int DEFAULT NEXTVAL ('CadastroValorPag_seq')  NOT NULL PRIMARY KEY,
+	valorpbA4 real NULL,
+	valorpbA3 real NULL,
+	valorcolorA4 real NULL,
+	valorcolorA3 real NULL,
+	valorScanA4 real NULL,
+	valorScanA3 real NULL,
+	dtAtivacao Timestamp(3) NULL DEFAULT (now()),
+	dtDesativacao Timestamp(3) NULL);
+
+
+CREATE SEQUENCE ControleCotaGrupo_seq;
+
+CREATE TABLE ControleCotaGrupo(
+	idctrlGrupo int DEFAULT NEXTVAL ('ControleCotaGrupo_seq') NOT NULL PRIMARY KEY,
+	idGrupo int NULL,
+	ano int NULL,
+	mes int NULL,
+	qtdAcumulada int NULL);
+
+CREATE SEQUENCE ControleCotaSetor_seq;
+
+CREATE TABLE ControleCotaSetor(
+	idctrlSetor int DEFAULT NEXTVAL ('ControleCotaSetor_seq') NOT NULL PRIMARY KEY,
+	idSetor int NULL,
+	ano int NULL,
+	mes int NULL,
+	qtdAcumulada int NULL);
+
+
+CREATE SEQUENCE ControleCotaUsuario_seq;
+
+CREATE TABLE ControleCotaUsuario(
+	idctrlUsuario int DEFAULT NEXTVAL ('ControleCotaUsuario_seq') NOT NULL,
+	idUsuario int NULL,
+	ano int NULL,
+	mes int NULL,
+	qtdAcumulada int NULL);
+
+ 
+CREATE SEQUENCE controleFotos_seq;
+
+CREATE TABLE controleFotos(
+	id int DEFAULT NEXTVAL ('controleFotos_seq') NOT NULL,
+	serie Text NOT NULL,
+	serialSuprimentoAtual Text NOT NULL,
+	serialSuprimentoAnterior Text NULL,
+	data Timestamp(3) NULL); 
+
+
+CREATE SEQUENCE controleToners_seq;
+
+CREATE TABLE controleToners(
+	id int DEFAULT NEXTVAL ('controleToners_seq') NOT NULL PRIMARY KEY,
+	serie Text NOT NULL,
+	serialSuprimentoAtual Text NOT NULL,
+	serialSuprimentoAnterior Text NULL,
+	data Timestamp(3) NULL); 
+
+
+CREATE SEQUENCE ControleTrocaCilindro_seq;
+
+CREATE TABLE ControleTrocaCilindro(
+	idControleTrocaCilindro int DEFAULT NEXTVAL ('ControleTrocaCilindro_seq')  NOT NULL PRIMARY KEY,
+	idEquipamento int NULL,
+	serie Text NULL,
+	serial Text NULL,
+	Cilindro int NULL,
+	CilindroAnterior int NULL,
+	contador int NULL,
+	data Timestamp(3) NULL,
+	retorno Boolean NULL DEFAULT '0'); 
+
+ 
+CREATE SEQUENCE ControleTrocaTonner_seq;
+
+CREATE TABLE ControleTrocaTonner(
+	idControleTrocaTonner int DEFAULT NEXTVAL ('ControleTrocaTonner_seq')  NOT NULL PRIMARY KEY,
+	idEquipamento int NULL,
+	serie Text NULL,
+	serial Text NULL,
+	Toner int NULL,
+	TonerAnterior int NULL,
+	contador int NULL,
+	data Timestamp(3) NULL); 
+
+ 
+CREATE SEQUENCE DadosDisparos_seq;
+
+CREATE TABLE DadosDisparos(
+	idDisparo int DEFAULT NEXTVAL ('DadosDisparos_seq')  NOT NULL PRIMARY KEY,
+	idEquipamento int NULL,
+	idPerfil int NULL,
+	modelo Text NULL,
+	nome Text NULL,
+	serie Text NULL,
+	impr_pf_color int NULL DEFAULT ((0)),
+	impr_pf_mono int NULL DEFAULT ((0)),
+	impr_gf_color int NULL DEFAULT ((0)),
+	impr_gf_mono int NULL DEFAULT ((0)),
+	copia_pf_color int NULL DEFAULT ((0)),
+	copia_pf_mono int NULL DEFAULT ((0)),
+	copia_gf_color int NULL DEFAULT ((0)),
+	copia_gf_mono int NULL DEFAULT ((0)),
+	fax_pf_color int NULL DEFAULT ((0)),
+	fax_pf_mono int NULL DEFAULT ((0)),
+	fax_gf_color int NULL DEFAULT ((0)),
+	fax_gf_mono int NULL DEFAULT ((0)),
+	total_pf_color int NULL DEFAULT ((0)),
+	total_pf_mono int NULL DEFAULT ((0)),
+	total_gf_color int NULL DEFAULT ((0)),
+	total_gf_mono int NULL DEFAULT ((0)),
+	toner_total_pr int NULL DEFAULT ((0)),
+	toner_atual_pr int NULL DEFAULT ((0)),
+	toner_total_ci int NULL DEFAULT ((0)),
+	toner_total_am int NULL DEFAULT ((0)),
+	toner_total_ma int NULL DEFAULT ((0)),
+	toner_atual_ci int NULL DEFAULT ((0)),
+	toner_atual_am int NULL DEFAULT ((0)),
+	toner_atual_ma int NULL DEFAULT ((0)),
+	cilindro_total int NULL DEFAULT ((0)),
+	cilindro_atual int NULL DEFAULT ((0)),
+	mac Text NULL,
+	localizacao Text NULL,
+	impr_pf_mono_simples int NULL DEFAULT ((0)),
+	impr_pf_mono_duplex int NULL DEFAULT ((0)),
+	copia_pf_mono_simples int NULL DEFAULT ((0)),
+	copia_pf_mono_duplex int NULL DEFAULT ((0)),
+	fax_pf_mono_simples int NULL DEFAULT ((0)),
+	fax_pf_mono_duplex int NULL DEFAULT ((0)),
+	total_pf_mono_simples int NULL DEFAULT ((0)),
+	total_pf_mono_duplex int NULL DEFAULT ((0)),
+	serialToner Text NULL,
+	serialFoto Text NULL,
+	data Timestamp(3) NULL,
+	cyan int NULL,
+	magenta int NULL,
+	yellow int NULL,
+	black int NULL,
+	scan int NULL,
+	report_a4 int NULL,
+	Fuser_total int NULL,
+	TransferRoller_total int NULL,
+	MPRoller_total int NULL,
+	Tray1Roller_total int NULL,
+	Tray2Roller_total int NULL,
+	ADFRoller_total int NULL,
+	ADFRubberPad_total int NULL,
+	Fuser_Atual int NULL,
+	TransferRoller_Atual int NULL,
+	MPRoller_Atual int NULL,
+	Tray1Roller_Atual int NULL,
+	Tray2Roller_Atual int NULL,
+	ADFRoller_Atual int NULL,
+	ADFRubberPad_Atual int NULL,
+	TrocaFusor Boolean NULL); 
+
+ 
+CREATE SEQUENCE DadosDisparosErros_seq;
+
+CREATE TABLE DadosDisparosErros(
+	idDisparo int DEFAULT NEXTVAL ('DadosDisparosErros_seq')  NOT NULL PRIMARY KEY,
+	idEquipamento int NULL,
+	idPerfil int NULL,
+	modelo Text NULL,
+	nome Text NULL,
+	serie Text NULL,
+	impr_pf_color int NULL,
+	impr_pf_mono int NULL,
+	impr_gf_color int NULL,
+	impr_gf_mono int NULL,
+	copia_pf_color int NULL,
+	copia_pf_mono int NULL,
+	copia_gf_color int NULL,
+	copia_gf_mono int NULL,
+	fax_pf_color int NULL,
+	fax_pf_mono int NULL,
+	fax_gf_color int NULL,
+	fax_gf_mono int NULL,
+	total_pf_color int NULL,
+	total_pf_mono int NULL,
+	total_gf_color int NULL,
+	total_gf_mono int NULL,
+	toner_total_pr int NULL,
+	toner_atual_pr int NULL,
+	toner_total_ci int NULL,
+	toner_total_am int NULL,
+	toner_total_ma int NULL,
+	toner_atual_ci int NULL,
+	toner_atual_am int NULL,
+	toner_atual_ma int NULL,
+	cilindro_total int NULL,
+	cilindro_atual int NULL,
+	mac Text NULL,
+	localizacao Text NULL,
+	impr_pf_mono_simples int NULL,
+	impr_pf_mono_duplex int NULL,
+	copia_pf_mono_simples int NULL,
+	copia_pf_mono_duplex int NULL,
+	fax_pf_mono_simples int NULL,
+	fax_pf_mono_duplex int NULL,
+	total_pf_mono_simples int NULL,
+	total_pf_mono_duplex int NULL,
+	serialToner Text NULL,
+	serialFoto Text NULL,
+	data Timestamp(3) NULL,
+	cyan int NULL,
+	magenta int NULL,
+	yellow int NULL,
+	black int NULL); 
+
+ 
+CREATE SEQUENCE disponibilidadeEquipamentos_seq;
+
+CREATE TABLE disponibilidadeEquipamentos(
+	id int DEFAULT NEXTVAL ('disponibilidadeEquipamentos_seq')  NOT NULL PRIMARY KEY,
+	sistema varchar(10) NOT NULL,
+	qtdTotal int NULL,
+	qtdDefasada int NULL,
+	data Timestamp(3) NULL);
+
+ 
+CREATE SEQUENCE EnviosSuprimentos_seq;
+
+CREATE TABLE EnviosSuprimentos(
+	idEnvioSuprimento int DEFAULT NEXTVAL ('EnviosSuprimentos_seq') NOT NULL PRIMARY KEY,
+	idEquipamento int NULL,
+	serie Text NULL,
+	data Timestamp(3) NULL,
+	quantidade int NULL,
+	tpSuprimento Text NULL,
+	tpEnvio Text NULL,
+	origem Text NULL,
+	postagem Text NULL,
+	etiqueta Text NULL,
+	partNumber Text NULL,
+	interno Boolean NULL DEFAULT '0',
+	dataEntrega Timestamp(3) NULL); 
+
+ 
+CREATE SEQUENCE Estacao_seq;
+
+CREATE TABLE Estacao(
+	id int DEFAULT NEXTVAL ('Estacao_seq') NOT NULL PRIMARY KEY,
+	nome Text NULL,
+	agente_versao Text NULL,
+	dt_primeiro_inv Timestamp(3) NULL,
+	dt_ultimo_inv Timestamp(3) NULL,
+	usuario Text NULL,
+	senha Text NULL,
+	ativo Boolean NULL); 
+
+ 
+CREATE SEQUENCE logs_seq;
+
+CREATE TABLE logs(
+	id int DEFAULT NEXTVAL ('logs_seq') NOT NULL PRIMARY KEY,
+	componente Text NULL,
+	mensagem Text NULL,
+	data Timestamp(3) NULL DEFAULT (now())); 
+
+
+CREATE SEQUENCE producaoCilindro_seq;
+
+CREATE TABLE producaoCilindro(
+	id int DEFAULT NEXTVAL ('producaoCilindro_seq') NOT NULL PRIMARY KEY,
+	serie Text NULL,
+	serialFoto Text NULL,
+	contInicial int NULL,
+	contFinal int NULL,
+	data Timestamp(3) NULL,
+	dtAtualizacao Timestamp(3) NULL DEFAULT (now())); 
+
+
+
+CREATE SEQUENCE producaodiaria_seq;
+
+CREATE TABLE producaodiaria(
+	idproducaodiaria int DEFAULT NEXTVAL ('producaodiaria_seq')  NOT NULL PRIMARY KEY,
+	idEquipamento int NOT NULL,
+	serie Text NOT NULL,
+	contInicial int NOT NULL,
+	contFinal int NULL,
+	Bilhetagem  INT NULL,
+	data TIMESTAMP NOT NULL,
+	contInicialCopias int NULL,
+	contFinalCopias int NULL,
+	contInicialPrint int NULL,
+	contFinalPrint int NULL,
+	contInicialFax int NULL,
+	contFinalFax int NULL
+) ;
+
+ 
+CREATE SEQUENCE producaoToner_seq;
+
+CREATE TABLE producaoToner(
+	id int DEFAULT NEXTVAL ('producaoToner_seq') NOT NULL PRIMARY KEY,
+	serie Text NULL,
+	serialToner Text NULL,
+	contInicial int NULL,
+	contFinal int NULL,
+	data Timestamp(3) NULL,
+	dtAtualizacao Timestamp(3) NULL DEFAULT (now())); 
+
+
+ 
+CREATE TABLE vw_relatorio_suprimentos(
+	idEquipamento int NOT NULL,
+	UF varchar(2) NULL,
+	Cidade varchar(35) NULL,
+	Unidade Text NULL,
+	Cod int NULL,
+	Ambiente Text NULL,
+	Fila varchar(30) NULL,
+	serie varchar(15) NULL,
+	ip varchar(15) NULL,
+	MediaDia int NULL,
+	ContadorAtual int NULL,
+	Toner Double precision NULL,
+	TonerEstimativaDias int NULL,
+	DataEnvioToner Timestamp(3) NULL,
+	DataEntregaToner Timestamp(3) NULL
+); 
+
+
+
+alter table CadastroEquipamentoModelo add status bit default '1';
+
+alter table CadastroEquipamentos drop column cor;
+alter table CadastroEquipamentos add cor bit default '0';
+
+ALTER TABLE ESTACAO DROP COLUMN ativo;
+ALTER TABLE ESTACAO DROP COLUMN dt_primeiro_inv;
+
+
+ALTER TABLE ESTACAO add ativo bit default '1';
+ALTER TABLE ESTACAO add dt_primeiro_inv timestamp default clock_timestamp();
+
+
+-- DROP VIEW public.vw_disponibilidade;
+
+CREATE OR REPLACE VIEW public.vw_disponibilidade AS
+ SELECT a.idequipamento,
+    b.uf,
+    c.cidade,
+    d.descricao AS unidade,
+    e.descricao AS setor,
+    a.nome AS fila,
+    a.serie,
+    a.ip,
+    f.dt,
+    date(now()) - date(f.dt) AS qtddias,
+    f.mac
+   FROM cadastroequipamentos a
+     LEFT JOIN cadastroestado b ON a.idestado = b.idestado
+     LEFT JOIN cadastrocidade c ON a.idcidade = c.idcidade
+     LEFT JOIN cadastrounidade d ON a.idlocalidade = d.idlocalidade
+     LEFT JOIN cadastrosetor e ON a.idsetor = e.idsetor
+     LEFT JOIN ( SELECT dadosdisparos.idequipamento,
+            dadosdisparos.serie,
+            dadosdisparos.data AS dt,
+            dadosdisparos.mac
+           FROM dadosdisparos
+          WHERE (dadosdisparos.iddisparo IN ( SELECT max(dadosdisparos_1.iddisparo) AS max
+                   FROM dadosdisparos dadosdisparos_1
+                  GROUP BY dadosdisparos_1.idequipamento))) f ON a.idequipamento = f.idequipamento;
+
+	CREATE VIEW vw_suprimentos AS
+ SELECT a.idequipamento,
+    b.uf,
+    c.cidade,
+    d.descricao AS unidade,
+    e.descricao AS setor,
+    a.nome AS fila,
+    a.serie,
+    a.ip,
+    CASE WHEN f.toner_total_pr > 0 THEN  (CAST(f.toner_atual_pr AS FLOAT) / CAST(f.toner_total_pr AS FLOAT)) * 100 ELSE 0 END Toner_PR, 
+    CASE WHEN f.toner_total_ma > 0 THEN  (CAST(f.toner_atual_ma AS FLOAT) / CAST(f.toner_total_ma AS FLOAT)) * 100 ELSE 0 END Toner_MA, 
+    CASE WHEN f.toner_total_am > 0 THEN  (CAST(f.toner_atual_am AS FLOAT) / CAST(f.toner_total_am AS FLOAT)) * 100 ELSE 0 END Toner_AM, 
+    CASE WHEN f.toner_total_ci > 0 THEN  (CAST(f.toner_atual_ci AS FLOAT) / CAST(f.toner_total_ci AS FLOAT)) * 100 ELSE 0 END Toner_CI, 
+    CASE WHEN f.cilindro_total > 0 THEN  (CAST(f.cilindro_atual AS FLOAT) / CAST(f.cilindro_total AS FLOAT)) * 100 ELSE 0 END Cilindro
+   FROM cadastroequipamentos a
+     LEFT JOIN cadastroestado b ON a.idestado = b.idestado
+     LEFT JOIN cadastrocidade c ON a.idcidade = c.idcidade
+     LEFT JOIN cadastrounidade d ON a.idlocalidade = d.idlocalidade
+     LEFT JOIN cadastrosetor e ON a.idsetor = e.idsetor
+     LEFT JOIN 
+     (
+     	select idEquipamento, serie, toner_total_pr, toner_atual_pr, toner_total_ci, toner_atual_ci, toner_total_ma, toner_atual_ma, toner_total_am, toner_atual_am, cilindro_total, cilindro_atual, data from dadosdisparos where idDisparo in 
+        (
+            SELECT MAX(idDisparo) from dadosdisparos group by idEquipamento
+        )
+     ) f on a.idEquipamento = f.idEquipamento;
+
+
+CREATE OR REPLACE FUNCTION public.bilhetagem(
+	timestamp without time zone,
+	timestamp without time zone)
+    RETURNS table (idequipamento integer, uf text, cidade text, unidade text, setor text, fila text, serie text, ip text, continicial integer, contfinal integer, volume integer, franquia integer, Tipo integer, dtAtivacao timestamp)
+    
+AS $$
+
+	SELECT a.idequipamento,
+    b.uf,
+    c.cidade,
+    d.descricao unidade,
+    e.descricao setor,
+    a.nome  fila,
+    a.serie,
+    a.ip, 
+    case when contInicial.totalmono is not null then contInicial.totalmono else 0 end + case when contInicial.totalcolor is not null then contInicial.totalcolor else 0 end contInicial,
+    contFinal.totalmono + contFinal.totalcolor contFinal,
+    (contFinal.totalmono + contFinal.totalcolor  - (case when contInicial.totalmono is not null then contInicial.totalmono else 0 end + case when contInicial.totalcolor is not null then contInicial.totalcolor else 0 end) ) Volume,
+    f.franquia,
+    a.idmodeloEquipamento Tipo,
+    a.dtAtivacao    
+   FROM  cadastroequipamentos a 
+     LEFT JOIN cadastroestado b ON a.idestado = b.idestado
+     LEFT JOIN cadastrocidade c ON a.idcidade = c.idcidade
+     LEFT JOIN cadastrounidade d ON a.idlocalidade = d.idlocalidade
+     LEFT JOIN cadastrosetor e ON a.idsetor = e.idsetor
+     LEFT JOIN (
+     select * from dadosdisparos where iddisparo in 
+     (
+     	SELECT MAX(idDisparo) idFinal from dadosdisparos 
+         where data < $2 
+         group by idEquipamento
+     )) contFinal ON a.idEquipamento = contFinal.idEquipamento
+     LEFT JOIN (
+     select * from dadosdisparos where iddisparo in 
+     (
+     	SELECT MAX(idDisparo) idFinal from dadosdisparos 
+        where data < $1 
+        group by idEquipamento
+     )) contInicial ON a.idEquipamento = contInicial.idEquipamento
+     left join cadastroEquipamentoModelo f on a.idModeloEquipamento = f.idModeloEquipamento
+
+$$ LANGUAGE 'sql';
+
+
+
+
+CREATE TABLE GruposUsuarios
+(
+	idGrupoUsuario SERIAL primary key not null
+    , grupo text
+    , data timestamp default clock_timestamp()
+    , status bit default '1'
+);
+
+insert into GruposUsuarios(grupo) values('Administradores');
+insert into GruposUsuarios(grupo) values('Operadores');
+insert into GruposUsuarios(grupo) values('Usuarios');
+
+CREATE TABLE Usuarios
+(
+	idUsuario SERIAL primary key not null
+    , nome text not null
+    , email text not null
+    , senha text not null
+    , data timestamp default clock_timestamp()
+    , status bit default '1'
+    , idGrupoUsuario int references GruposUsuarios(idGrupoUsuario) not null
+);
+
+insert into Usuarios(nome, email, senha, idGrupoUsuario) values('administrador','franklim@csfdigital.com.br', '4F88B6A6AFB59AC5A005EA086823E86B', 1);
+
+create view vw_usuarios as
+(
+    select b.idgrupousuario, a.idUsuario, a.nome, a.email, b.grupo from usuarios as a
+    left join GruposUsuarios as b on a.idGrupoUsuario = b.idGrupoUsuario
+);
+
+  alter table CadastroEquipamentoModelo add franquia int; 
+  alter table CadastroEquipamentoModelo add valor real;
+
+  CREATE VIEW vw_listaoids AS  
+	(  
+		SELECT a.idPerfil, b.fabricante, b.modelo, b.firmware, a.oid, c.propriedade FROM cadastroOid a
+		left join CadastroPerfilOid b on a.idPerfil = b.idPerfil
+		left join CadastroPropriedadeOid c on a.idpropriedade = c.idpropriedade
+	) ;
+
+CREATE OR REPLACE FUNCTION public.volumemensal(
+	text,
+	timestamp without time zone,
+	timestamp without time zone)
+    RETURNS TABLE(idequipamento integer, serie text, continicial integer, contfinal integer, volume integer)
+    
+AS $$
+
+	SELECT a.idequipamento,
+    a.serie,
+    contInicial.totalcolor + contInicial.totalmono contInicial,
+    contFinal.totalcolor +  contFinal.totalmono contfinal,
+    (contFinal.totalcolor +  contFinal.totalmono)  - (contInicial.totalcolor + contInicial.totalmono) Volume
+   FROM  cadastroequipamentos a 
+     LEFT JOIN cadastroestado b ON a.idestado = b.idestado
+     LEFT JOIN cadastrocidade c ON a.idcidade = c.idcidade
+     LEFT JOIN cadastrounidade d ON a.idlocalidade = d.idlocalidade
+     LEFT JOIN cadastrosetor e ON a.idsetor = e.idsetor
+     LEFT JOIN (
+     select * from dadosdisparos where iddisparo in 
+     (
+     	SELECT MAX(idDisparo) idFinal from dadosdisparos where data < $3 group by idEquipamento
+     )) contFinal ON a.idEquipamento = contFinal.idEquipamento
+     LEFT JOIN (
+     select * from dadosdisparos where iddisparo in 
+     (
+     	SELECT MAX(idDisparo) idFinal from dadosdisparos where data < $2 group by idEquipamento
+     )) contInicial ON a.idEquipamento = contInicial.idEquipamento
+     WHERE a.serie = $1
+     
+
+$$ LANGUAGE 'sql';
+
+alter table dadosdisparos add Total int;
+
+CREATE TABLE controleSuprimentos
+(
+    idControle SERIAL PRIMARY KEY, 
+    suprimento text not null, 
+    serial text not null,
+    contInicial int, 
+    suprimentoTotal int, 
+    suprimentoAtual int, 
+    status text,
+    mediaDiaria int, 
+    suprimentoValor int, 
+    serie text
+);
+    
+
+alter table controleSuprimentos add dtInicial timestamp default clock_timestamp();
+alter table controleSuprimentos add dtFinal timestamp;
+alter table controleSuprimentos add producaosuprimento int;
+alter table controleSuprimentos add contFinal int;
+alter table controleSuprimentos add duracaoEstimada int;

@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Monitor_Service_Correios.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Monitor_Service_Correios_Ocomon_Chamados" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.2.222/requisicoes/Chamados.asmx</Value>
+    </Setting>
+    <Setting Name="Monitor_Service_Correios_Email_Email" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://192.168.2.222/requisicoes/Email.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

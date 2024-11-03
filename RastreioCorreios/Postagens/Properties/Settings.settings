@@ -1,0 +1,12 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="Postagens.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Postagens_correios_rastro" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://webservice.correios.com.br:80/service/rastro</Value>
+    </Setting>
+    <Setting Name="Postagens_CorreiosPrazo_CalcPrecoPrazoWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

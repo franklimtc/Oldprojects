@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="b6a92558-c10b-48fb-b1af-40ffd7a3bcb5" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://srvprn:8080/ws/Operacoes.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Operacoes1.xsd" MetadataType="Schema" ID="43cd963d-6fa3-4020-8929-f8b5f7cf103d" SourceId="1" SourceUrl="http://srvprn:8080/ws/Operacoes.svc?xsd=xsd1" />
+    <MetadataFile FileName="Operacoes.disco" MetadataType="Disco" ID="7cf5a0d2-c2f0-46ee-8f65-f2e4a49da157" SourceId="1" SourceUrl="http://srvprn:8080/ws/Operacoes.svc?disco" />
+    <MetadataFile FileName="Operacoes.wsdl" MetadataType="Wsdl" ID="11ab0dff-65ef-49cc-92f6-32fa1a5b2514" SourceId="1" SourceUrl="http://srvprn:8080/ws/Operacoes.svc?wsdl" />
+    <MetadataFile FileName="Operacoes2.xsd" MetadataType="Schema" ID="7a190952-721f-42f4-8fc6-02ecc05b1657" SourceId="1" SourceUrl="http://srvprn:8080/ws/Operacoes.svc?xsd=xsd2" />
+    <MetadataFile FileName="Operacoes3.xsd" MetadataType="Schema" ID="8c202fee-5bc5-462d-b7a8-7fe4b5da6872" SourceId="1" SourceUrl="http://srvprn:8080/ws/Operacoes.svc?xsd=xsd0" />
+    <MetadataFile FileName="Operacoes4.xsd" MetadataType="Schema" ID="d962ad9e-42a8-40f5-af71-5c8bfeb0c4ec" SourceId="1" SourceUrl="http://srvprn:8080/ws/Operacoes.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

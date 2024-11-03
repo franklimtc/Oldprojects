@@ -1,0 +1,175 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.SNMP", "dnaPrint.SNMP\dnaPrint.SNMP.csproj", "{1F2F8F5C-5FC2-440E-8D10-A789804CE2FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.Config", "dnaPrint.Config\dnaPrint.Config.csproj", "{2E09C3A6-DE3A-4132-A32C-6046A73BA9E7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.Base", "dnaPrint.Base\dnaPrint.Base.csproj", "{F0635365-B14B-4945-BE10-DAB9447D98FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.DAO", "dnaPrint.DAO\dnaPrint.DAO.csproj", "{C8D78DB6-BF3F-4D30-83EF-1EBCF2450FB8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.WebServices", "dnaPrint.WebServices\dnaPrint.WebServices.csproj", "{7F561008-87AF-4AAA-B631-B69B2AA66BE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.Log", "dnaPrint.Log\dnaPrint.Log.csproj", "{E6280E78-0607-4678-8109-F4FA1FDA0FAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.Service", "dnaPrint.Service\dnaPrint.Service.csproj", "{5EB6A338-835B-4D78-8298-2A343938F0DA}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "dnaPrint.Agente", "dnaPrint.Agente\dnaPrint.Agente.vdproj", "{042380BC-A1CD-4E76-BDDE-2F3EE801DF53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.Scripts", "dnaPrint.Scripts\dnaPrint.Scripts.csproj", "{1448A8F7-7E56-4C21-B927-742895FBA54D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaprint.Testes", "dnaprint.Testes\dnaprint.Testes.csproj", "{971A900F-2250-43B8-8B8D-13E9BBEC0825}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7F561008-87AF-4AAA-B631-B69B2AA66BE7} = {7F561008-87AF-4AAA-B631-B69B2AA66BE7}
+	EndProjectSection
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "dnaPrint.HistoricoEnvios", "dnaPrint.HistoricoEnvios", "{8BD0C57C-4E31-4E72-AA4A-E4BBEC57A21D}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.5"
+		ProjectReferences = "{c8d78db6-bf3f-4d30-83ef-1ebcf2450fb8}|dnaPrint.DAO.dll;"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_59283"
+		Debug.AspNetCompiler.PhysicalPath = "dnaPrint.HistoricoEnvios\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59283\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_59283"
+		Release.AspNetCompiler.PhysicalPath = "dnaPrint.HistoricoEnvios\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_59283\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "59283"
+		SlnRelativePath = "dnaPrint.HistoricoEnvios\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.Notification", "dnaPrint.Notification\dnaPrint.Notification.csproj", "{EB30FBC2-5C1B-494D-9F68-6D8105662D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dnaPrint.Web", "dnaPrint.Web\dnaPrint.Web.csproj", "{40341DAB-62C1-46A2-AC0E-CDCF00284426}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hightcharts", "hightcharts\hightcharts.csproj", "{89FB2AC8-257F-44EF-8609-CFD174904313}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1F2F8F5C-5FC2-440E-8D10-A789804CE2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F2F8F5C-5FC2-440E-8D10-A789804CE2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F2F8F5C-5FC2-440E-8D10-A789804CE2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F2F8F5C-5FC2-440E-8D10-A789804CE2FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E09C3A6-DE3A-4132-A32C-6046A73BA9E7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E09C3A6-DE3A-4132-A32C-6046A73BA9E7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E09C3A6-DE3A-4132-A32C-6046A73BA9E7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E09C3A6-DE3A-4132-A32C-6046A73BA9E7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0635365-B14B-4945-BE10-DAB9447D98FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0635365-B14B-4945-BE10-DAB9447D98FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0635365-B14B-4945-BE10-DAB9447D98FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0635365-B14B-4945-BE10-DAB9447D98FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D78DB6-BF3F-4D30-83EF-1EBCF2450FB8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D78DB6-BF3F-4D30-83EF-1EBCF2450FB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D78DB6-BF3F-4D30-83EF-1EBCF2450FB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D78DB6-BF3F-4D30-83EF-1EBCF2450FB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F561008-87AF-4AAA-B631-B69B2AA66BE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F561008-87AF-4AAA-B631-B69B2AA66BE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F561008-87AF-4AAA-B631-B69B2AA66BE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F561008-87AF-4AAA-B631-B69B2AA66BE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6280E78-0607-4678-8109-F4FA1FDA0FAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6280E78-0607-4678-8109-F4FA1FDA0FAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6280E78-0607-4678-8109-F4FA1FDA0FAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6280E78-0607-4678-8109-F4FA1FDA0FAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EB6A338-835B-4D78-8298-2A343938F0DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EB6A338-835B-4D78-8298-2A343938F0DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EB6A338-835B-4D78-8298-2A343938F0DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EB6A338-835B-4D78-8298-2A343938F0DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{042380BC-A1CD-4E76-BDDE-2F3EE801DF53}.Debug|Any CPU.ActiveCfg = Debug
+		{042380BC-A1CD-4E76-BDDE-2F3EE801DF53}.Release|Any CPU.ActiveCfg = Release
+		{1448A8F7-7E56-4C21-B927-742895FBA54D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1448A8F7-7E56-4C21-B927-742895FBA54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1448A8F7-7E56-4C21-B927-742895FBA54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{971A900F-2250-43B8-8B8D-13E9BBEC0825}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{971A900F-2250-43B8-8B8D-13E9BBEC0825}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{971A900F-2250-43B8-8B8D-13E9BBEC0825}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{971A900F-2250-43B8-8B8D-13E9BBEC0825}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BD0C57C-4E31-4E72-AA4A-E4BBEC57A21D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD0C57C-4E31-4E72-AA4A-E4BBEC57A21D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD0C57C-4E31-4E72-AA4A-E4BBEC57A21D}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD0C57C-4E31-4E72-AA4A-E4BBEC57A21D}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{EB30FBC2-5C1B-494D-9F68-6D8105662D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB30FBC2-5C1B-494D-9F68-6D8105662D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB30FBC2-5C1B-494D-9F68-6D8105662D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB30FBC2-5C1B-494D-9F68-6D8105662D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{40341DAB-62C1-46A2-AC0E-CDCF00284426}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{40341DAB-62C1-46A2-AC0E-CDCF00284426}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{40341DAB-62C1-46A2-AC0E-CDCF00284426}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{40341DAB-62C1-46A2-AC0E-CDCF00284426}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89FB2AC8-257F-44EF-8609-CFD174904313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89FB2AC8-257F-44EF-8609-CFD174904313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89FB2AC8-257F-44EF-8609-CFD174904313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89FB2AC8-257F-44EF-8609-CFD174904313}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 15
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklimtc.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = dnaPrint.SNMP\\dnaPrint.SNMP.csproj
+		SccProjectName1 = dnaPrint.SNMP
+		SccLocalPath1 = dnaPrint.SNMP
+		SccProjectUniqueName2 = dnaPrint.Config\\dnaPrint.Config.csproj
+		SccProjectName2 = dnaPrint.Config
+		SccLocalPath2 = dnaPrint.Config
+		SccProjectUniqueName3 = dnaPrint.Base\\dnaPrint.Base.csproj
+		SccProjectName3 = dnaPrint.Base
+		SccLocalPath3 = dnaPrint.Base
+		SccProjectUniqueName4 = dnaPrint.DAO\\dnaPrint.DAO.csproj
+		SccProjectName4 = dnaPrint.DAO
+		SccLocalPath4 = dnaPrint.DAO
+		SccProjectUniqueName5 = dnaPrint.WebServices\\dnaPrint.WebServices.csproj
+		SccProjectName5 = dnaPrint.WebServices
+		SccLocalPath5 = dnaPrint.WebServices
+		SccProjectUniqueName6 = dnaPrint.Log\\dnaPrint.Log.csproj
+		SccProjectName6 = dnaPrint.Log
+		SccLocalPath6 = dnaPrint.Log
+		SccProjectUniqueName7 = dnaPrint.Service\\dnaPrint.Service.csproj
+		SccProjectName7 = dnaPrint.Service
+		SccLocalPath7 = dnaPrint.Service
+		SccProjectUniqueName8 = dnaPrint.Agente\\dnaPrint.Agente.vdproj
+		SccProjectName8 = dnaPrint.Agente
+		SccLocalPath8 = dnaPrint.Agente
+		SccProjectUniqueName9 = dnaPrint.Scripts\\dnaPrint.Scripts.csproj
+		SccProjectName9 = dnaPrint.Scripts
+		SccLocalPath9 = dnaPrint.Scripts
+		SccProjectUniqueName10 = dnaprint.Testes\\dnaprint.Testes.csproj
+		SccProjectName10 = dnaprint.Testes
+		SccLocalPath10 = dnaprint.Testes
+		SccWebProject11 = true
+		SccProjectUniqueName11 = dnaPrint.HistoricoEnvios
+		SccProjectName11 = dnaPrint.HistoricoEnvios
+		SccLocalPath11 = dnaPrint.HistoricoEnvios
+		SccProjectEnlistmentChoice11 = 2
+		SccProjectUniqueName12 = dnaPrint.Notification\\dnaPrint.Notification.csproj
+		SccProjectName12 = dnaPrint.Notification
+		SccLocalPath12 = dnaPrint.Notification
+		SccProjectUniqueName13 = dnaPrint.Web\\dnaPrint.Web.csproj
+		SccProjectName13 = dnaPrint.Web
+		SccLocalPath13 = dnaPrint.Web
+		SccProjectUniqueName14 = hightcharts\\hightcharts.csproj
+		SccProjectName14 = hightcharts
+		SccLocalPath14 = hightcharts
+	EndGlobalSection
+EndGlobal

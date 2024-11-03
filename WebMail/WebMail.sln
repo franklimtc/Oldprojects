@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebMail", "..\..\..\..\OneDrive\Projetos\WebMail", "{E989E800-77F5-484C-B647-1AA5FBB26A4B}"
+	ProjectSection(WebsiteProperties) = preProject
+		SccProjectName = "SAK"
+		SccAuxPath = "SAK"
+		SccLocalPath = "SAK"
+		SccProvider = "SAK"
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_51630"
+		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\OneDrive\Projetos\WebMail\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51630\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_51630"
+		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\OneDrive\Projetos\WebMail\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_51630\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "51630"
+		SlnRelativePath = "..\..\..\..\OneDrive\Projetos\WebMail\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "wmFormTeste", "wmFormTeste\wmFormTeste.csproj", "{155E71B6-230B-469A-BF16-E221AED878F4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E989E800-77F5-484C-B647-1AA5FBB26A4B} = {E989E800-77F5-484C-B647-1AA5FBB26A4B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebEmailMonitor", "..\WebEmail\WebEmailMonitor\WebEmailMonitor.csproj", "{EECEA876-B104-4FB7-AC5F-689E896AD075}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E989E800-77F5-484C-B647-1AA5FBB26A4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E989E800-77F5-484C-B647-1AA5FBB26A4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E989E800-77F5-484C-B647-1AA5FBB26A4B}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{E989E800-77F5-484C-B647-1AA5FBB26A4B}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{155E71B6-230B-469A-BF16-E221AED878F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{155E71B6-230B-469A-BF16-E221AED878F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{155E71B6-230B-469A-BF16-E221AED878F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{155E71B6-230B-469A-BF16-E221AED878F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EECEA876-B104-4FB7-AC5F-689E896AD075}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EECEA876-B104-4FB7-AC5F-689E896AD075}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EECEA876-B104-4FB7-AC5F-689E896AD075}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EECEA876-B104-4FB7-AC5F-689E896AD075}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklimtc.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\WebEmail\\WebEmailMonitor\\WebEmailMonitor.csproj
+		SccProjectName1 = ../WebEmail/WebEmailMonitor
+		SccLocalPath1 = ..\\WebEmail\\WebEmailMonitor
+		SccProjectUniqueName2 = wmFormTeste\\wmFormTeste.csproj
+		SccProjectName2 = wmFormTeste
+		SccLocalPath2 = wmFormTeste
+		SccWebProject3 = true
+		SccProjectUniqueName3 = ..\\..\\..\\..\\OneDrive\\Projetos\\WebMail
+		SccProjectName3 = WebMail
+		SccLocalPath3 = ..\\..\\..\\..\\OneDrive\\Projetos\\WebMail
+		SccProjectEnlistmentChoice3 = 2
+	EndGlobalSection
+EndGlobal

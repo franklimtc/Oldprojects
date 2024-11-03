@@ -1,0 +1,197 @@
+﻿@using Site.Models
+@model LoginViewModel
+@{
+    ViewBag.Title = "Efetuar login";
+}
+<div class="wrapper">
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <br /><br />
+            <div class="card">
+                <div class="card-header card-header-warning">
+
+
+                    
+
+
+                </div>
+                <div class="card-body">
+                    
+                </div>
+            </div>
+            <div class="login">
+                <h2 style="text-align:center">@ViewBag.Title.</h2>
+
+                <section id="loginForm">
+                    @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
+        {
+            <div class="FormLogin">
+                @Html.AntiForgeryToken()
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 style="text-align:center">Informe seu usuário e senha.</h4>
+                        <br />
+
+                    </div>
+                </div>
+
+                @*<hr />*@
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+
+                            @*@Html.LabelFor(m => m.Email, new { @class = "col-md-2 control-label", id = "lbEmail" })*@
+
+                            @Html.TextBoxFor(m => m.Email, new { @class = "input", @style = "text-align:center; width: 100%", @required = "required" })
+                            <span class="nome">Email</span>
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            @*@Html.LabelFor(m => m.Password, new { @class = "col-md-2 control-label", id = "lbSenha" })*@
+
+                            @Html.PasswordFor(m => m.Password, new { @class = "input", @style = "text-align:center; width: 100%", @required = "required" })
+                            <span class="nome">Senha</span>
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="form-group">
+
+                            <div class="checkbox" style="text-align:center">
+                                @Html.CheckBoxFor(m => m.RememberMe)
+                                @Html.LabelFor(m => m.RememberMe)
+                            </div>
+
+                        </div>
+
+                        <div class="form-group" style="text-align:center;width:100%">
+
+                            <input id="btn" type="submit" value="Efetuar login" class="btn btn-outline-danger" />
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                @* Ativar isso assim que você tiver a confirmação de conta ativada para a funcionalidade de redefinição de senha
+        <p>
+            @Html.ActionLink("Esqueceu sua senha?", "ForgotPassword")
+        </p>*@
+            </div>
+
+}
+                </section>
+            </div>
+
+
+
+
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+</div>
+
+    
+    <style>
+        .FormLogin h4 + h2 {
+            text-align: center;
+        }
+
+        .login {
+            justify-content: center;
+        }
+
+            .login .input {
+                text-align: center;
+                position: relative;
+                width: 100%;
+                margin-bottom: 10px;
+                height: 40px;
+                padding: 2px 2px;
+                box-sizing: border-box;
+                font-size: 15px;
+                outline: none;
+                border: 1px solid;
+                background-color:#f2f2f2;
+            }
+
+            .login .nome {
+                position: absolute;
+                top: 8px;
+                left: 150px;
+                padding: 0;
+                pointer-events: none;
+                background-color: transparent;
+                text-transform: uppercase;
+            }
+
+        input:focus ~ .nome,
+        input:valid ~ .nome {
+            top: -20px;
+            left: 128px;
+            border: 1px solid;
+            padding: 0 10px;
+            background-color: white;
+            transition: 1s;
+        }
+
+        .form-group {
+            text-align: center;
+        }
+
+            .form-group input[type=submit]:hover {
+                -webkit-transform: scale(1.2);
+                -ms-transform: scale(1.2);
+                transform: scale(1.2);
+            }
+
+        .card {
+            box-shadow: rgb(255, 255, 255) 0px 0px 2px 2px;
+            background-color: white;
+            border-radius:3px;
+        }
+
+        body {
+            background-color: #f2f2f2;
+        }
+        .card-header{
+            margin-left:10px;
+            margin-right:10px;
+            margin-top:-5px;
+            
+        }
+        
+     
+    </style>
+    <script>
+        $("#btn").click(function () {
+            $(".card").css('-webkit-transform', 'scale(0.2)');
+            $(".card").css('-ms-transform', 'scale(0.2)');
+            $(".card").css('transform', 'scale(0.2)');
+        });
+    </script>
+
+
+    @section Scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+
+    }

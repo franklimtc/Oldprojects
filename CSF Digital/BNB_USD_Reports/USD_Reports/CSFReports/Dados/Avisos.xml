@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" standalone="yes"?>
+<Avisos>
+  <Aviso Id="1" Descricao="Importante:  Após 48 horas sem retorno, a solicitação deverá ser fechada." CriadoPor="Administrador do sistema" CriadoEm="2011-07-31T00:00:00" />
+  <Aviso Id="2" Descricao="A solicitação deverá ser fechada após confirmação do usuário." CriadoPor="Administrador do sistema" CriadoEm="2011-07-31T00:00:00" />
+  <Aviso Id="3" Descricao="O tempo válido para o SLA corresponde ao período de 08:00 ás 18:00 de segunda a sexta." CriadoPor="Administrador do sistema" CriadoEm="2011-07-31T00:00:00" />
+  <Aviso Id="4" Descricao="O tempo que o chamado permanecer com o status 'Pendente c/ Usuário' não será considerado." CriadoPor="Administrador do sistema" CriadoEm="2011-07-31T00:00:00" />
+  <Aviso Id="5" Descricao="Caso o chamado não for de responsábilidade da CSF Digital deverá ser fechado ou encaminhado para equipe correta." CriadoPor="Administrador do sistema" CriadoEm="2011-07-31T00:00:00" />
+  <Aviso Id="6" Descricao="Atentar para o preenchimento correto da série da máquina no chamado, pois será utilizada para identificar a localidade." CriadoPor="Administrador do sistema" CriadoEm="2011-12-27T00:00:00" />
+</Avisos>

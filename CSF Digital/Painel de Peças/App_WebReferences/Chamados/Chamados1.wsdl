@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="retornaChamados">
+        <s:complexType />
+      </s:element>
+      <s:element name="retornaChamadosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="retornaChamadosResult" type="tns:ArrayOfReq" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfReq">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="Req" nillable="true" type="tns:Req" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="Req">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Numero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Local" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Serie" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Descricao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Toner" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fotoreceptor" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DataAbertura" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="QtdDias" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TpEnvio" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="Fechar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="numero" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="etiqueta" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="postagem" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="serie" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FecharResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="FecharResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="retornaChamadosSoapIn">
+    <wsdl:part name="parameters" element="tns:retornaChamados" />
+  </wsdl:message>
+  <wsdl:message name="retornaChamadosSoapOut">
+    <wsdl:part name="parameters" element="tns:retornaChamadosResponse" />
+  </wsdl:message>
+  <wsdl:message name="FecharSoapIn">
+    <wsdl:part name="parameters" element="tns:Fechar" />
+  </wsdl:message>
+  <wsdl:message name="FecharSoapOut">
+    <wsdl:part name="parameters" element="tns:FecharResponse" />
+  </wsdl:message>
+  <wsdl:portType name="ChamadosSoap">
+    <wsdl:operation name="retornaChamados">
+      <wsdl:input message="tns:retornaChamadosSoapIn" />
+      <wsdl:output message="tns:retornaChamadosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Fechar">
+      <wsdl:input message="tns:FecharSoapIn" />
+      <wsdl:output message="tns:FecharSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="ChamadosSoap" type="tns:ChamadosSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retornaChamados">
+      <soap:operation soapAction="http://tempuri.org/retornaChamados" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fechar">
+      <soap:operation soapAction="http://tempuri.org/Fechar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="ChamadosSoap12" type="tns:ChamadosSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="retornaChamados">
+      <soap12:operation soapAction="http://tempuri.org/retornaChamados" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Fechar">
+      <soap12:operation soapAction="http://tempuri.org/Fechar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Chamados">
+    <wsdl:port name="ChamadosSoap" binding="tns:ChamadosSoap">
+      <soap:address location="http://sigep01.csfce.csfsl.com.br/requisicoes/Chamados.asmx" />
+    </wsdl:port>
+    <wsdl:port name="ChamadosSoap12" binding="tns:ChamadosSoap12">
+      <soap12:address location="http://sigep01.csfce.csfsl.com.br/requisicoes/Chamados.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

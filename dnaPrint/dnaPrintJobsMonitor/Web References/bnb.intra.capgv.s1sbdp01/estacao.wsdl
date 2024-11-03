@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Atualizar">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="nome" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="versao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtInventarioInicial" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="dtInventarioFinal" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="usuario" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="senha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AtualizarResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AtualizarResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistroLog">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="componente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mensagem" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RegistroLogResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="RegistroLogResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="AtualizarSoapIn">
+    <wsdl:part name="parameters" element="tns:Atualizar" />
+  </wsdl:message>
+  <wsdl:message name="AtualizarSoapOut">
+    <wsdl:part name="parameters" element="tns:AtualizarResponse" />
+  </wsdl:message>
+  <wsdl:message name="RegistroLogSoapIn">
+    <wsdl:part name="parameters" element="tns:RegistroLog" />
+  </wsdl:message>
+  <wsdl:message name="RegistroLogSoapOut">
+    <wsdl:part name="parameters" element="tns:RegistroLogResponse" />
+  </wsdl:message>
+  <wsdl:portType name="estacaoSoap">
+    <wsdl:operation name="Atualizar">
+      <wsdl:input message="tns:AtualizarSoapIn" />
+      <wsdl:output message="tns:AtualizarSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RegistroLog">
+      <wsdl:input message="tns:RegistroLogSoapIn" />
+      <wsdl:output message="tns:RegistroLogSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="estacaoSoap" type="tns:estacaoSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Atualizar">
+      <soap:operation soapAction="http://tempuri.org/Atualizar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistroLog">
+      <soap:operation soapAction="http://tempuri.org/RegistroLog" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="estacaoSoap12" type="tns:estacaoSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Atualizar">
+      <soap12:operation soapAction="http://tempuri.org/Atualizar" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegistroLog">
+      <soap12:operation soapAction="http://tempuri.org/RegistroLog" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="estacao">
+    <wsdl:port name="estacaoSoap" binding="tns:estacaoSoap">
+      <soap:address location="http://192.168.1.104:8080/wsdnaprint/estacao.asmx" />
+    </wsdl:port>
+    <wsdl:port name="estacaoSoap12" binding="tns:estacaoSoap12">
+      <soap12:address location="http://192.168.1.104:8080/wsdnaprint/estacao.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

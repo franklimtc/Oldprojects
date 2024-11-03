@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CSF_Correios.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CSF_Correios_Correios_rastro" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://webservice.correios.com.br:80/service/rastro</Value>
+    </Setting>
+    <Setting Name="CSF_Correios_CorreiosPrazo_CalcPrecoPrazoWS" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx</Value>
+    </Setting>
+    <Setting Name="CSF_Correios_AtendeCliente_AtendeClienteService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">https://apps.correios.com.br/SigepMasterJPA/AtendeClienteService/AtendeCliente</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

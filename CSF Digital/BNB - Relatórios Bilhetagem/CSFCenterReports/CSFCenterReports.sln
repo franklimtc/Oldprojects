@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSFCenterReports", "CSFCenterReports\CSFCenterReports.csproj", "{DCDEEC48-86BB-4DD6-BE3E-8A4FAE5B40AC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSFCenterReports.Controls", "CSFCenterReports.Controls\CSFCenterReports.Controls.csproj", "{CBBA4741-D779-441A-9D16-74E2E6E4B38E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "hightcharts", "hightcharts\hightcharts.csproj", "{89FB2AC8-257F-44EF-8609-CFD174904313}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://franklimtc.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = CSFCenterReports.Controls\\CSFCenterReports.Controls.csproj
+		SccProjectName1 = CSFCenterReports.Controls
+		SccLocalPath1 = CSFCenterReports.Controls
+		SccProjectUniqueName2 = CSFCenterReports\\CSFCenterReports.csproj
+		SccProjectName2 = CSFCenterReports
+		SccLocalPath2 = CSFCenterReports
+		SccProjectUniqueName3 = hightcharts\\hightcharts.csproj
+		SccProjectName3 = hightcharts
+		SccLocalPath3 = hightcharts
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCDEEC48-86BB-4DD6-BE3E-8A4FAE5B40AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDEEC48-86BB-4DD6-BE3E-8A4FAE5B40AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDEEC48-86BB-4DD6-BE3E-8A4FAE5B40AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDEEC48-86BB-4DD6-BE3E-8A4FAE5B40AC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CBBA4741-D779-441A-9D16-74E2E6E4B38E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBBA4741-D779-441A-9D16-74E2E6E4B38E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBBA4741-D779-441A-9D16-74E2E6E4B38E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBBA4741-D779-441A-9D16-74E2E6E4B38E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89FB2AC8-257F-44EF-8609-CFD174904313}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89FB2AC8-257F-44EF-8609-CFD174904313}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89FB2AC8-257F-44EF-8609-CFD174904313}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89FB2AC8-257F-44EF-8609-CFD174904313}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

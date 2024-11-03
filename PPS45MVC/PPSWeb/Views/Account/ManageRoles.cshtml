@@ -1,0 +1,31 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Gerenciar Grupos</h2>
+<br />
+
+<h3>Grupos</h3>
+@{
+    var lista = PPSWeb.Models.RoleViewModels.Listar();
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">ID</th>
+                <th scope="col">Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in lista)
+            {
+                <tr>
+                    <th scope="row">@item.RoleID</th>
+                    <td>@item.Name</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+    
+}
+
+<h3>Membros</h3>

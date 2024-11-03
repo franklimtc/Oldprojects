@@ -1,0 +1,564 @@
+h1{
+	
+}
+
+h2{
+	
+}
+
+h3{
+	float:right;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 10px;
+	margin: 12px 172px;
+}
+
+h4{
+	float: left;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-style:normal;
+	color:#6b6b6b;
+	margin: -37px 0 0 190px;
+}
+
+#topoEsticado{
+	
+	min-width: 1000px   ;
+	min-height: 86px;
+	background-image:url(bg_topo.jpg);
+}
+
+#topoCentro{
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*----------------*/	
+.logo{
+	width: 157px;
+	height: 60px;
+	float:left;
+	margin: 18px 0 0 135px;
+}
+
+.logo a.link {
+	background:url(logo.png) no-repeat;
+	width: 157px;
+	height:60px;
+	text-indent: -99999px;
+	display: block;
+}
+
+
+.iconeConfiguracao{
+	width: 23px;
+	height: 20px;
+	float:right;
+	margin: 38px 58px 0 10px;
+}
+
+.iconeConfiguracao a.link {
+	background:url(configuracao.png) no-repeat;
+	width: 23px;
+	height: 20px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.iconeConfiguracao a:hover {
+	background:url(configuracaohover.png) no-repeat;
+	width: 23px;
+	height: 20px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.barraTopo1{
+	width: 2px;
+	height: 15px;
+	float: right;
+	margin: 40px 0 0 13px;
+	background: url(barraTopo.png) no-repeat;
+}
+
+.iconeMonitor{
+	width: 23px;
+	height: 20px;
+	float:right;
+	margin: 38px 0 0 10px;
+}
+
+.iconeMonitor a.link {
+	background:url(monitor.png) no-repeat;
+	width: 23px;
+	height: 20px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.iconeMonitor a:hover {
+	background:url(monitorhover.png) no-repeat;
+	width: 23px;
+	height: 20px;
+	text-indent: -99999px;
+	display: block;
+}
+/*----------------*/
+
+.barraTopo2{
+	width: 2px;
+	height: 15px;
+	float: right;
+	margin: 40px 0 0 12px;
+	background: url(barraTopo.png) no-repeat;
+}
+.iconeHome{
+	width: 23px;
+	height: 20px;
+	float:right;
+	margin: 38px 0 0 10px;
+}
+
+.iconeHome a.link {
+	background:url(home.png) no-repeat;
+	width: 23px;
+	height: 20px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.iconeHome a:hover {
+	background:url(homehover.png) no-repeat;
+	width: 23px;
+	height: 20px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.iconelogout{
+	width: 23px;
+	height: 20px;
+	float:right;
+	margin: 38px 100px 0 10px;
+}
+
+.iconelogout a.link {
+	background:url(logout.png) no-repeat;
+	width: 23px;
+	height: 20px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.iconelogout a:hover {
+	background:url(logout.png) no-repeat;
+	width: 23px;
+	height: 20px;
+	text-indent: -99999px;
+	display: block;
+}
+
+/*Menu - Relatório*/
+.menuRelatorio{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px -5px;
+}
+
+.menuRelatorio a.link {
+	background:url(relatorio_link.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuRelatorio a:hover {
+	background:url(relatorio_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuRelatorioAtivo{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px -5px;
+}
+
+.menuRelatorioAtivo a.link {
+	background:url(relatorio_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuRelatorioAtivo a:hover {
+	background:url(relatorio_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+/*----------------*/
+
+/*Menu - Home*/
+.menuHome{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px 0px 0 135px;
+}
+
+.menuHome a.link{
+	background:url(home_link.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuHome a:hover {
+	background:url(home_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuHomeAtivo{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px 0px 0 135px;
+}
+
+.menuHomeAtivo a.link{
+	background:url(home_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuHomeAtivo a:hover {
+	background:url(home_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+/*----------------*/
+
+/*Menu - Monitor*/
+.menuMonitor{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px 0px;
+}
+
+.menuMonitor a.link {
+	background:url(monitor_link.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuMonitor a:hover {
+	background:url(monitor_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuMonitorAtivo{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px 0px;
+}
+
+.menuMonitorAtivo a.link {
+	background:url(monitor_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuMonitorAtivo a:hover {
+	background:url(monitor_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+/*----------------*/
+
+/*Menu - Configuração*/
+.menuConfiguracao{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px -5px;
+}
+
+.menuConfiguracao a.link {
+	background:url(configuracao_link.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuConfiguracao a:hover {
+	background:url(configuracao_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuConfiguracaoAtivo{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px -5px;
+}
+
+.menuConfiguracaoAtivo a.link {
+	background:url(configuracao_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuConfiguracaoAtivo a:hover {
+	background:url(configuracao_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+/*----------------*/
+
+/*Menu - Suporte*/
+.menuSuporte{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px -1px;
+}
+
+.menuSuporte a.link {
+	background:url(suporte_link.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuSuporte a:hover {
+	background:url(suporte_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuSuporteAtivo{
+	width: 202px;
+	height: 41px;
+	float: left;
+	margin: 23px -1px;
+}
+
+.menuSuporteAtivo a.link {
+	background:url(suporte_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.menuSuporteAtivo a:hover {
+	background:url(suporte_hover.png) no-repeat;
+	width: 202px;
+	height: 41px;
+	text-indent: -99999px;
+	display: block;
+}
+/*----------------*/
+
+#menu ul li{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+#barraVermelha{
+	width:100%;
+	height: 64px;
+	float:left;
+	margin: 7px 0px;
+	background-image:url(barra_vermelha.jpg);	
+}
+
+
+#conteudoEsticado{
+	width: 100%;
+	height: 750px;
+	background-image:url(bg_conteudo.jpg);
+}
+
+#conteudoCentro{
+	width: 984px;
+	height: 545px;
+	min-width: 984px;
+	min-height: 545px;
+	margin: -7px 135px;
+	float: left;
+	background-image:url(conteudo_branco.jpg);
+}
+
+	
+#conteudoLeft{
+	float: left;
+	width: 50%;
+	height: 100%;
+}
+
+.bgRel{
+	width: 402px;
+	height: 374px;
+	background:url(bg_rel.png) no-repeat;
+	margin: 10px 0 0 10px;
+}
+
+.botaoRel{
+	width: 91px;
+	height: 32px;
+	margin: 0px 321px;
+}
+
+.botaoRel a.link {
+	background:url(botao_rel.png) no-repeat;
+	width: 91px;
+	height: 32px;
+	text-indent: -99999px;
+	display: block;
+}
+
+#conteudoRight{
+	float: right;
+	width: 49%;
+}
+
+.bgConfig_cima{
+	width: 542px;
+	height: 157px;
+	background:url(bg_config.png) no-repeat;
+	margin: 10px 430px;
+}
+
+.botaoConfig_cima{
+	width: 108px;
+	height: 34px;
+	margin: -10px -5px;
+	float: right;
+}
+
+.botaoConfig_cima a.link{
+	background:url(botao_config.png) no-repeat;
+	width: 108px;
+	height: 34px;
+	text-indent: -99999px;
+	display: block;
+}
+
+.bgConfig_baixo{
+	width: 542px;
+	height: 157px;
+	background:url(bg_config.png) no-repeat;
+	margin: 58px 430px;
+}
+
+.botaoConfig_baixo{
+	width: 108px;
+	height: 34px;
+	margin: -58px -5px;
+	float: right;
+}
+
+.botaoConfig_baixo a.link{
+	background:url(botao_config.png) no-repeat;
+	width: 108px;
+	height: 34px;
+	text-indent: -99999px;
+	display: block;
+}
+
+#barrainformacoes{
+	width: 100%;
+	height: 10px;
+	margin: 0 0;
+}
+
+.barraFina{
+	width: 1280px;
+	height: 2px;
+	background:url(barrafina_rodape.png) no-repeat;
+	margin: 10px 0 40px 0px;
+}
+
+.setaLeft{
+	width: 37px;
+	height: 32px;
+	background:url(seta_left.png) no-repeat;
+	margin: -31px 0 15px 140px;
+}
+
+.setaRight{
+	width: 37px;
+	height: 32px;
+	background:url(seta_right.png) no-repeat;
+	margin: -45px 0 9px 1072px;
+}
+
+#rodapeEsticado{
+	width: 100%;
+	height: 35px;
+	background-image:url(rodape.jpg);
+}
+
+body {
+	margin:0;
+	padding:0;
+	width:100%;
+	color:#5f5f5f;
+	font:normal 12px/1.8em Arial, Helvetica, sans-serif;
+}
+
+.content {
+	border:2px solid #e3e3e3;
+	background-color:#fff;
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	margin:0 0 8px 0;
+}	
+
+menuFixo
+
+.menuFixo{
+	min-width: 1200px;
+}

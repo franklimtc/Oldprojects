@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="dnaPrintJobs.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="dnaPrintJobs_bnb_intra_capgv_s1sbdp01_printjob" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://s1sbdp01.capgv.intra.bnb/ws/printjob.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

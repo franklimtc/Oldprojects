@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="EtiquetasSuprimentos" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://177.22.35.178:8484/wsEtqSuprimentos/EtiquetasSuprimentos.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://177.22.35.178:8484/wsEtqSuprimentos/EtiquetasSuprimentos.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://177.22.35.178:8484/wsEtqSuprimentos/EtiquetasSuprimentos.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/EtiquetasSuprimentosService" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IEtiquetasSuprimentos_Listar_InputMessage">
+    <wsdl:part name="parameters" element="tns:Listar" />
+  </wsdl:message>
+  <wsdl:message name="IEtiquetasSuprimentos_Listar_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEtiquetasSuprimentos_AtualizarProducao_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarProducao" />
+  </wsdl:message>
+  <wsdl:message name="IEtiquetasSuprimentos_AtualizarProducao_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarProducaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEtiquetasSuprimentos_AtualizarTroca_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarTroca" />
+  </wsdl:message>
+  <wsdl:message name="IEtiquetasSuprimentos_AtualizarTroca_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarTrocaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEtiquetasSuprimentos_AtualizarTermino_InputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarTermino" />
+  </wsdl:message>
+  <wsdl:message name="IEtiquetasSuprimentos_AtualizarTermino_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AtualizarTerminoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IEtiquetasSuprimentos_QuantidadeListas_InputMessage">
+    <wsdl:part name="parameters" element="tns:QuantidadeListas" />
+  </wsdl:message>
+  <wsdl:message name="IEtiquetasSuprimentos_QuantidadeListas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:QuantidadeListasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IEtiquetasSuprimentos">
+    <wsdl:operation name="Listar">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/Listar" message="tns:IEtiquetasSuprimentos_Listar_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/ListarResponse" message="tns:IEtiquetasSuprimentos_Listar_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarProducao">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/AtualizarProducao" message="tns:IEtiquetasSuprimentos_AtualizarProducao_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/AtualizarProducaoResponse" message="tns:IEtiquetasSuprimentos_AtualizarProducao_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarTroca">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/AtualizarTroca" message="tns:IEtiquetasSuprimentos_AtualizarTroca_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/AtualizarTrocaResponse" message="tns:IEtiquetasSuprimentos_AtualizarTroca_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarTermino">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/AtualizarTermino" message="tns:IEtiquetasSuprimentos_AtualizarTermino_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/AtualizarTerminoResponse" message="tns:IEtiquetasSuprimentos_AtualizarTermino_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="QuantidadeListas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/QuantidadeListas" message="tns:IEtiquetasSuprimentos_QuantidadeListas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IEtiquetasSuprimentos/QuantidadeListasResponse" message="tns:IEtiquetasSuprimentos_QuantidadeListas_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IEtiquetasSuprimentos" type="tns:IEtiquetasSuprimentos">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Listar">
+      <soap:operation soapAction="http://tempuri.org/IEtiquetasSuprimentos/Listar" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarProducao">
+      <soap:operation soapAction="http://tempuri.org/IEtiquetasSuprimentos/AtualizarProducao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarTroca">
+      <soap:operation soapAction="http://tempuri.org/IEtiquetasSuprimentos/AtualizarTroca" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarTermino">
+      <soap:operation soapAction="http://tempuri.org/IEtiquetasSuprimentos/AtualizarTermino" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuantidadeListas">
+      <soap:operation soapAction="http://tempuri.org/IEtiquetasSuprimentos/QuantidadeListas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="EtiquetasSuprimentos">
+    <wsdl:port name="BasicHttpBinding_IEtiquetasSuprimentos" binding="tns:BasicHttpBinding_IEtiquetasSuprimentos">
+      <soap:address location="http://177.22.35.178:8484/wsEtqSuprimentos/EtiquetasSuprimentos.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
